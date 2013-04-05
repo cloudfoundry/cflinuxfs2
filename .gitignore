@@ -1,2 +1,4 @@
 /cookbooks
 /tmp
+.vagrant
+rootfs.tgz
