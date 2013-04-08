@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require "aws/s3"
+
+STACK_NAME = ARGV[0]
+FILE= "#{STACK_NAME}/rootfs.tgz"
+ENVIRONMENT = ARGV.include?("--latest") ? "latest" : "dev"
+
+raise "Usage: upload <stack_name> (e.g. lucid64)" unless STACK_NAME
+raise "rootfs file not found: #{FILE}" unless File.exists?(FILE)
+
+SIZE = File.size(FILE) / (1024 * 1024)
+puts "Uploading #{FILE} (#{SIZE}M)"
+
+AWS::S3::Base.establish_connection!(
+  :access_key_id => ENV['AMAZON_ACCESS_KEY_ID'],
+  :secret_access_key => ENV['AMAZON_SECRET_ACCESS_KEY']
+)
+AWS::S3::S3Object.store("#{STACK_NAME}.#{ENVIRONMENT}.tgz", File.open(FILE), 'cfstacks')
+
