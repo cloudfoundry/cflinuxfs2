@@ -11,5 +11,6 @@ fi
 
 export VAGRANT_CWD=$STACK_NAME
 vagrant up
+vagrant ssh --command "cd /vagrant && sudo ./build"
 echo "Created file $STACK_NAME/rootfs.tgz"
 vagrant destroy -f
