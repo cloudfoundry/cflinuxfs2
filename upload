@@ -18,7 +18,7 @@ begin
     :secret_access_key => AWS_KEY
   )
   AWS::S3::Bucket.find(BUCKET_NAME)
-rescue AWS::S3::AccessDenied, AWS::S3::MissingAccessKey
+rescue AWS::S3::MissingAccessKey
   puts "Access denied, please set AMAZON_ACCESS_KEY_ID and AMAZON_SECRET_ACCESS_KEY like so:"
   puts "export AMAZON_ACCESS_KEY_ID=", "export AMAZON_SECRET_ACCESS_KEY="
   exit
