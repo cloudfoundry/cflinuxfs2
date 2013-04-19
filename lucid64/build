@@ -30,11 +30,13 @@ packages="
   libcap2-bin
   libcurl3
   libcurl3-dev
+  libmagick9-dev
   libmysqlclient-dev
   libncurses5-dev
   libpq-dev
   libreadline6-dev
   libsqlite-dev
+  libsqlite3-dev
   libssl-dev
   libxml2
   libxml2-dev
