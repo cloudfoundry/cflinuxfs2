@@ -7,7 +7,7 @@ To create a rootfs for the lucid64 stack:
 
 ```shell
 ./init
-./build lucid64
+./build_stack lucid64
 ```
 
 To upload the new rootfs to s3:
@@ -15,5 +15,5 @@ To upload the new rootfs to s3:
 ```shell
 export AMAZON_ACCESS_KEY_ID=your-aws-id
 export AMAZON_SECRET_ACCESS_KEY=your-aws-key
-./upload lucid64
+./upload_stack lucid64
 ```
