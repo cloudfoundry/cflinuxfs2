@@ -33,6 +33,6 @@ export AMAZON_SECRET_ACCESS_KEY=your-aws-key
 
 To update rootfs package in cf-release overwrite rootfs blob cf-release/blobs/rootfs/lucid64.tar.gz with the new tarball.
 
-Run `bosh upload blobs` to upload package to bosh blobstore. See more on how to upload blobs: https://github.com/cloudfoundry/internal-docs/blob/master/uploading_blobs.md
+Run `bosh upload blobs` to upload package to bosh blobstore.
 
 After cf-release is updated with the new rootfs, future DEAs will automatically use that rootfs for its warden containers.
