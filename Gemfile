@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-gem "librarian"
+gem "librarian-chef"
 gem "aws-s3"
