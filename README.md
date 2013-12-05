@@ -3,6 +3,11 @@ Cloud Foundry Stacks
 
 This repo contains scripts for creating warden root filesystems.
 
+# Dependencies
+
+* Vagrant
+* Ruby 1.9.3-p484 or higher
+
 # Adding a new package to the rootfs
 
 `lucid64/build` has a list of packages that are passed to `apt-get install`.
@@ -13,6 +18,8 @@ To add new packages, just add the name of the package to that list.
 To create a rootfs for the lucid64 stack:
 
 ```shell
+gem install bundler
+bundle install
 ./init
 ./build_stack lucid64
 ```
