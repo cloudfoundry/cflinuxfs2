@@ -19,7 +19,6 @@ To create a rootfs for the lucid64 stack:
 
 ```shell
 gem install bundler
-bundle install
 ./init
 ./build_stack lucid64
 ```
