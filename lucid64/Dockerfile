@@ -1,4 +1,4 @@
-FROM crohr/ubuntu:lucid
+FROM cloudfoundry/lucid64:minbase
 
 ADD build /tmp/build
 ADD assets /tmp/assets
