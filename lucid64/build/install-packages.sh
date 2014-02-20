@@ -17,6 +17,7 @@ packages="
   git-core
   imagemagick
   iputils-arping
+  less
   libcap2-bin
   libaio1
   libbz2-dev
@@ -36,7 +37,9 @@ packages="
   libxslt1.1
   libyaml-dev
   lsof
+  netcat
   openssh-server
+  python
   psmisc
   quota
   rsync
@@ -45,6 +48,7 @@ packages="
   tcpdump
   traceroute
   unzip
+  vim
   wget
   zip
 "
