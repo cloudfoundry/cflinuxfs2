@@ -1,6 +1,3 @@
-#!/bin/bash
-# vim: set ft=sh
-
 set -e -x
 
 source /etc/lsb-release
@@ -8,8 +5,6 @@ source /etc/lsb-release
 function apt_get() {
   apt-get -f -y --force-yes --no-install-recommends "$@"
 }
-
-cat /etc/hosts
 
 packages="
   bind9-host
@@ -54,36 +49,19 @@ packages="
   zip
 "
 
-# disable interactive dpkg
-echo "debconf debconf/frontend select noninteractive" | debconf-set-selections
-
-# timezone
-dpkg-reconfigure -fnoninteractive -pcritical tzdata
-
-# locale
-locale-gen en_US.UTF-8
-dpkg-reconfigure -fnoninteractive -pcritical libc6
-dpkg-reconfigure -fnoninteractive -pcritical locales
-
-# apt sources
 cat > /etc/apt/sources.list <<EOS
 deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME main universe multiverse
 deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME-updates main universe multiverse
 deb http://security.ubuntu.com/ubuntu $DISTRIB_CODENAME-security main universe multiverse
 EOS
 
-# upgrade upstart first to prevent it from messing up our stubs and starting daemons anyway
+# install gpgv so we can update
 apt_get install gpgv
+
 apt_get update
+
+# upgrade upstart first to prevent it from messing up our stubs and starting daemons anyway
 apt_get install upstart
-#apt_get dist-upgrade
+
 apt_get install $packages
 apt-get clean
-
-# install ruby using ruby-build
-git clone git://github.com/sstephenson/ruby-build.git /tmp/ruby-build
-pushd /tmp/ruby-build
-  PREFIX=/usr/local ./install.sh
-  /usr/local/bin/ruby-build 1.9.3-p392 /usr
-popd
-rm -rf /tmp/ruby-build*

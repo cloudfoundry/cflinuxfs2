@@ -1,10 +1,13 @@
 FROM crohr/ubuntu:lucid
 
-ADD assets/etc/hosts /etc/hosts
-ADD assets/etc/timezone /etc/timezone
-ADD assets/etc/default/locale /etc/default/locale
+ADD build /tmp/build
+ADD assets /tmp/assets
 
-ADD build.sh /tmp/
-RUN bash /tmp/build.sh
+RUN bash /tmp/build/configure-locale-timezone.sh
+RUN bash /tmp/build/install-packages.sh
+RUN bash /tmp/build/install-ruby.sh
 
-RUN rm -rf /tmp/build.sh
+# create /app so we can bind-mount over it; / cannot be assumed to be writable
+RUN mkdir /app
+
+RUN rm -rf /tmp/build
