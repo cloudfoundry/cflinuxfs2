@@ -2,8 +2,9 @@ all: lucid64.tar.gz
 
 lucid64.cid: lucid64/Dockerfile
 	docker build -t cloudfoundry/lucid64 lucid64
-	docker run -cidfile=lucid64.cid -i -a stdout -a stderr --privileged \
-		cloudfoundry/lucid64 apt-get -y dist-upgrade
+
+	# create a container to export
+	docker run -cidfile=lucid64.cid cloudfoundry/lucid64 ls
 
 lucid64.tar: lucid64.cid
 	docker export `cat lucid64.cid` > lucid64.tar

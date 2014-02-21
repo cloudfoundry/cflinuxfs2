@@ -59,6 +59,11 @@ deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME-updates main universe mul
 deb http://security.ubuntu.com/ubuntu $DISTRIB_CODENAME-security main universe multiverse
 EOS
 
+# cannot upgrade udev; need --privileged during build
+#
+# see https://github.com/dotcloud/docker/pull/2979
+echo "udev hold" | dpkg --set-selections
+
 # install gpgv so we can update
 apt_get install gpgv
 
@@ -68,4 +73,7 @@ apt_get update
 apt_get install upstart
 
 apt_get install $packages
+
+apt_get dist-upgrade
+
 apt-get clean
