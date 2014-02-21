@@ -10,8 +10,10 @@ packages="
   bind9-host
   bison
   build-essential
+  cron
   curl
   dnsutils
+  fakeroot
   flex
   gdb
   git-core
@@ -23,6 +25,7 @@ packages="
   libbz2-dev
   libcurl3
   libcurl3-dev
+  libicu-dev
   libmagick9-dev
   libmysqlclient-dev
   libncurses5-dev
@@ -37,9 +40,11 @@ packages="
   libxslt1.1
   libyaml-dev
   lsof
-  netcat
+  manpages
+  manpages-dev
   openssh-server
   python
+  python-central
   psmisc
   quota
   rsync
@@ -51,6 +56,55 @@ packages="
   vim
   wget
   zip
+"
+
+# ideally we'd just include ubuntu-minimal. but we can't.
+#
+# we can include this subset:
+ubuntu_minimal_stripped="
+adduser
+apt
+apt-utils
+bzip2
+dash
+debconf
+dhcp3-client
+eject
+gnupg
+ifupdown
+initramfs-tools
+iproute
+iputils-ping
+kbd
+less
+locales
+lsb-release
+makedev
+mawk
+module-init-tools
+net-tools
+netbase
+netcat-openbsd
+ntpdate
+passwd
+procps
+python
+sudo
+tasksel
+tzdata
+ubuntu-keyring
+upstart
+ureadahead
+whiptail
+"
+
+# ...but this subset must be excluded, as they need --privileged:
+#
+# see https://github.com/dotcloud/docker/pull/2979
+ubuntu_minimal_excluding="
+console-setup
+udev
+rsyslog
 "
 
 cat > /etc/apt/sources.list <<EOS
@@ -69,10 +123,7 @@ apt_get install gpgv
 
 apt_get update
 
-# upgrade upstart first to prevent it from messing up our stubs and starting daemons anyway
-apt_get install upstart
-
-apt_get install $packages
+apt_get install $packages $ubuntu_minimal_stripped
 
 apt_get dist-upgrade
 
