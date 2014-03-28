@@ -22,7 +22,7 @@ packages="
   dnsutils
   flex
   gdb
-  git-core
+  git
   imagemagick
   iputils-arping
   libaio1
@@ -98,6 +98,7 @@ cat > $rootfs_dir/etc/apt/sources.list <<EOS
 deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME main universe multiverse
 deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME-updates main universe multiverse
 deb http://security.ubuntu.com/ubuntu $DISTRIB_CODENAME-security main universe multiverse
+deb http://ppa.launchpad.net/git-core/ppa/ubuntu $DISTRIB_CODENAME main
 EOS
 
 # upgrade upstart first to prevent it from messing up our stubs and starting daemons anyway
