@@ -42,7 +42,6 @@ packages="
   libxml2-dev
   libxslt1-dev
   libxslt1.1
-  libyaml-dev
   lsof
   openssh-server
   psmisc
@@ -105,6 +104,18 @@ EOS
 apt_get install upstart
 apt_get dist-upgrade
 apt_get install $packages
+
+# install libyaml from source to get a more recent version
+run_in_chroot $rootfs_dir "
+  set -e
+  cd /tmp
+  wget http://pyyaml.org/download/libyaml/yaml-0.1.6.tar.gz
+  tar -zxvf yaml-0.1.6.tar.gz
+  cd yaml-0.1.6
+  ./configure
+  make
+  make install
+"
 
 # install ruby using ruby-build
 run_in_chroot $rootfs_dir "
