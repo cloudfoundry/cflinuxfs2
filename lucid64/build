@@ -126,6 +126,9 @@ run_in_chroot $rootfs_dir "
   /usr/local/bin/ruby-build 1.9.3-p392 /usr
 "
 
+# cleanup artifacts in /tmp
+rm -rf $rootfs_dir/tmp/*
+
 # package up rootfs
 cd $rootfs_dir
 tar czf /vagrant/rootfs.tgz *
