@@ -123,7 +123,7 @@ run_in_chroot $rootfs_dir "
   git clone git://github.com/sstephenson/ruby-build.git &&
   cd ruby-build &&
   PREFIX=/usr/local ./install.sh &&
-  /usr/local/bin/ruby-build 1.9.3-p545 /usr
+  /usr/local/bin/ruby-build 1.9.3-p547 /usr
 "
 
 # package up rootfs
