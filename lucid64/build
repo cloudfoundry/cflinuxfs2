@@ -34,7 +34,9 @@ packages="
   libmysqlclient-dev
   libncurses5-dev
   libpq-dev
-  libreadline6-dev
+  libreadline5
+  libreadline5-dev
+  libreadline6
   libsqlite-dev
   libsqlite3-dev
   libssl-dev
