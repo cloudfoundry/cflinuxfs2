@@ -1,3 +1,5 @@
+## lucid64 stack
+
 ### To recreate the rootfs:
 
 ```
@@ -22,4 +24,13 @@ docker push cloudfoundry/inigo-ci
 goto diego-release
 bosh add blob ~/workspace/stacks/lucid64.tar.gz rootfs
 bosh upload blobs
+```
+
+## trusty64 stack
+
+### To recreate the trusty64 rootfs:
+
+```
+make trusty64.tar.gz
+docker push cloudfoundry/trusty64
 ```
