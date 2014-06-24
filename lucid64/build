@@ -21,6 +21,7 @@ packages="
   curl
   dnsutils
   flex
+  fuse-utils
   gdb
   git
   imagemagick
@@ -30,6 +31,8 @@ packages="
   libcap2-bin
   libcurl3
   libcurl3-dev
+  libfuse-dev
+  libfuse2
   libmagick9-dev
   libmysqlclient-dev
   libncurses5-dev
@@ -47,6 +50,7 @@ packages="
   psmisc
   quota
   rsync
+  sshfs
   strace
   sysstat
   tcpdump
