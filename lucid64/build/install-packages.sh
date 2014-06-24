@@ -15,6 +15,7 @@ packages="
   dnsutils
   fakeroot
   flex
+  fuse-utils
   gdb
   git-core
   imagemagick
@@ -25,6 +26,8 @@ packages="
   libbz2-dev
   libcurl3
   libcurl3-dev
+  libfuse-dev
+  libfuse2
   libicu-dev
   libmagick9-dev
   libmysqlclient-dev
@@ -48,6 +51,7 @@ packages="
   psmisc
   quota
   rsync
+  sshfs
   strace
   sysstat
   tcpdump

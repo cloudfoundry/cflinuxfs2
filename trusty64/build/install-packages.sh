@@ -11,6 +11,7 @@ function apt_get() {
 # CHANGES from lucid64 script:
 # - REMOVED python-central as it is obsolete
 # - REPLACED libmagick9-dev with graphicsmagick-libmagick-dev-compat
+# - REPLACED fuse-utils with fuse
 packages="
   bind9-host
   bison
@@ -20,6 +21,7 @@ packages="
   dnsutils
   fakeroot
   flex
+  fuse
   gdb
   git-core
   graphicsmagick-libmagick-dev-compat
@@ -31,6 +33,8 @@ packages="
   libbz2-dev
   libcurl3
   libcurl3-dev
+  libfuse-dev
+  libfuse2
   libicu-dev
   libmysqlclient-dev
   libncurses5-dev
@@ -52,6 +56,7 @@ packages="
   psmisc
   quota
   rsync
+  sshfs
   strace
   sysstat
   tcpdump
