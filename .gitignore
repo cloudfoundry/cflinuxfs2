@@ -2,3 +2,4 @@
 /tmp
 .vagrant
 rootfs.tgz
+rootfs_lucid_dpkg_l.out
