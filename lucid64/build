@@ -130,6 +130,12 @@ run_in_chroot $rootfs_dir "
   /usr/local/bin/ruby-build 1.9.3-p547 /usr
 "
 
+# list package dependencies with versions
+run_in_chroot $rootfs_dir "
+  dpkg -l | tee /tmp/rootfs_${DISTRIB_CODENAME}_dpkg_l.out
+"
+cp $rootfs_dir/tmp/rootfs_${DISTRIB_CODENAME}_dpkg_l.out /vagrant
+
 # cleanup artifacts in /tmp
 rm -rf $rootfs_dir/tmp/*
 
