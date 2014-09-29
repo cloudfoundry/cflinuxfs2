@@ -1,4 +1,4 @@
 #!/bin/bash
 
 bundle install
-librarian-chef install
+bundle exec librarian-chef install
