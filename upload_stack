@@ -7,7 +7,7 @@ FILE= "#{STACK_NAME}/rootfs.tgz"
 ENVIRONMENT = ARGV.include?("--latest") ? "latest" : "dev"
 AWS_ID = ENV['AMAZON_ACCESS_KEY_ID']
 AWS_KEY = ENV['AMAZON_SECRET_ACCESS_KEY']
-BUCKET_NAME = "cfstacks"
+BUCKET_NAME = "cf-runtime-stacks"
 
 raise "Usage: upload <stack_name> (e.g. lucid64)" unless STACK_NAME
 raise "rootfs file not found: #{FILE}" unless File.exists?(FILE)
