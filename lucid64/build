@@ -91,6 +91,10 @@ dpkg-reconfigure -fnoninteractive -pcritical libc6
 dpkg-reconfigure -fnoninteractive -pcritical locales
 "
 
+# core dump directory
+mkdir -p $rootfs_dir/var/vcap/sys/cores
+chmod ugo+rwx $rootfs_dir/var/vcap/sys/cores
+
 # firstboot script
 cp $assets_dir/etc/rc.local $rootfs_dir/etc/rc.local
 cp $assets_dir/root/firstboot.sh $rootfs_dir/root/firstboot.sh
