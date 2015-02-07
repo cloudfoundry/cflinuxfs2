@@ -1,5 +1,6 @@
 /cookbooks
 /tmp
 .vagrant
-rootfs.tgz
+*.tgz
+*.tar.gz
 rootfs_lucid_dpkg_l.out
