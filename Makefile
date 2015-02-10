@@ -5,7 +5,7 @@ trusty64.cid: trusty64/Dockerfile
 	docker build -t cloudfoundry/trusty64 trusty64
 
 	# create a container to export
-	docker run --cidfile=trusty64.cid cloudfoundry/trusty64 ls
+	docker run --cidfile=trusty64.cid cloudfoundry/trusty64 dpkg -l | tee rootfs_trusty_dpkg_l.out
 
 trusty64.tar: trusty64.cid
 	docker export `cat trusty64.cid` > trusty64.tar
