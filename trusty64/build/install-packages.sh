@@ -5,80 +5,87 @@ source /etc/lsb-release
 function apt_get() {
   # CHANGES from lucid64 script:
   # - REMOVED `--fix-broken` option as seems to be missing in trusty
-  # - ADDED --no-install-recommends
   apt-get -y --force-yes --no-install-recommends "$@"
 }
 
 # CHANGES from lucid64 packages:
-# - REMOVED aptitude
-# - REMOVED defoma
-# - REMOVED dmidecode
-# - REMOVED fontconfig
-# - REMOVED gsfonts
-# - REMOVED laptop-detect
-# - REMOVED libatk
-# - REMOVED libatm
-# - REMOVED libavahi-client
-# - REMOVED libavahi-common-data
-# - REMOVED libavahi-common
-# - REMOVED libcairo
-# - REMOVED libclass-accessor-perl
-# - REMOVED libcups
-# - REMOVED libcwidget
-# - REMOVED libdatrie
-# - REMOVED libdirectfb
-# - REMOVED libdjvulibre-dev
-# - REMOVED libdjvulibre-text
-# - REMOVED libdjvulibre
-# - REMOVED libdrm-intel
-# - REMOVED libdrm-nouveau
-# - REMOVED libdrm-radeon
-# - REMOVED libept
-# - REMOVED libgd-noxpm
-# - REMOVED libgpm
-# - REMOVED libgraphviz-dev
-# - REMOVED libgraphviz
-# - REMOVED libgtk
-# - REMOVED libgtk-common
-# - REMOVED libilmbase-dev
-# - REMOVED libilmbase
-# - REMOVED libio-string-perl
-# - REMOVED libmagickcore-dev
-# - REMOVED libmagickwand-dev
-# - REMOVED libnl
-# - REMOVED libopenexr-dev
-# - REMOVED libopenexr
-# - REMOVED libpango
-# - REMOVED libpango-common
-# - REMOVED libparse-debianchangelog-perl
-# - REMOVED libpixman
-# - REMOVED libsub-name-perl
-# - REMOVED libthai-data
-# - REMOVED libthai
-# - REMOVED libts
-# - REMOVED libxapian
-# - REMOVED libxcb-render-util
-# - REMOVED libxcb-render
-# - REMOVED libxcomposite
-# - REMOVED libxcursor
-# - REMOVED libxdamage
-# - REMOVED libxfixes
-# - REMOVED libxft
-# - REMOVED libxi6
-# - REMOVED libxinerama
-# - REMOVED libxrandr
-# - REMOVED libxrender
-# - REMOVED libxt-dev
-# - REMOVED libxt
-# - REMOVED python-central
-# - REMOVED shared-mime-info
-# - REMOVED tasksel
-# - REMOVED tasksel-data
-# - REMOVED tsconf
-# - REMOVED ttf-dejavu-core
 # - REPLACED libmagick9-dev with graphicsmagick-libmagick-dev-compat
+# - REMOVED libgraphviz4 as it does not exist in trusty
+# - REMOVED libpango1.0-common as it does not exist in trusty
+# - REMOVED laptop-detect
+packages_from_lucid_debootstrap="
+aptitude
+dmidecode
+fontconfig
+gsfonts
+libatk1.0-0
+libatm1
+libavahi-client3
+libavahi-common-data
+libavahi-common3
+libcairo2
+libclass-accessor-perl
+libcups2
+libcwidget3
+libdatrie1
+libdirectfb-1.2-9
+libdjvulibre-dev
+libdjvulibre-text
+libdjvulibre21
+libdrm-intel1
+libdrm-nouveau2
+libdrm-radeon1
+libept1.4.12
+libgd2-noxpm-dev
+libgpm2
+libgraphviz-dev
+libgtk-3-0
+libgtk-3-common
+libilmbase-dev
+libilmbase6
+libio-string-perl
+libnl-3-200
+libopenexr-dev
+libopenexr6
+libpango1.0-0
+libparse-debianchangelog-perl
+libpixman-1-0
+libsub-name-perl
+libthai-data
+libthai0
+libts-0.0-0
+libxapian22
+libxcb-render-util0
+libxcb-render0
+libxcomposite1
+libxcursor1
+libxdamage1
+libxfixes3
+libxft2
+libxi6
+libxinerama1
+libxrandr2
+libxrender1
+libxt-dev
+libxt6
+shared-mime-info
+tsconf
+ttf-dejavu-core
+"
 
-lucid_packages="
+## Pulled from Diego Trusty rootfs
+packages_copied_from_diego_trusty_script="
+cron
+fakeroot
+less
+libicu-dev
+libyaml-dev
+manpages
+manpages-dev
+python
+"
+
+packages_copied_from_lucid_script="
 bind9-host
 bison
 build-essential
@@ -132,18 +139,6 @@ wget
 zip
 "
 
-## Pulled from Diego Trusty rootfs
-additional_packages="
-cron
-fakeroot
-less
-libicu-dev
-libyaml-dev
-manpages
-manpages-dev
-python
-"
-
 cat > /etc/apt/sources.list <<EOS
 deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME main universe multiverse
 deb http://archive.ubuntu.com/ubuntu $DISTRIB_CODENAME-updates main universe multiverse
@@ -152,11 +147,8 @@ EOS
 
 # install gpgv so we can update
 apt_get install gpgv
-
 apt_get update
-
-apt_get install $lucid_packages $additional_packages ubuntu-minimal
-
 apt_get dist-upgrade
+apt_get install $packages_copied_from_lucid_script $packages_from_lucid_debootstrap $packages_copied_from_diego_trusty_script ubuntu-minimal
 
 apt-get clean
