@@ -130,6 +130,7 @@ traceroute
 unzip
 wget
 zip
+libssl0.9.8
 "
 
 ## Pulled from Diego Trusty rootfs
