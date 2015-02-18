@@ -18,6 +18,7 @@ aptitude
 dmidecode
 fontconfig
 gsfonts
+laptop-detect
 libatk1.0-0
 libatm1
 libavahi-client3
@@ -69,6 +70,8 @@ libxrender1
 libxt-dev
 libxt6
 shared-mime-info
+tasksel
+tasksel-data
 tsconf
 ttf-dejavu-core
 "
