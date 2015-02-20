@@ -5,3 +5,4 @@
 *.tar.gz
 rootfs_trusty_dpkg_l.out
 rootfs_lucid_dpkg_l.out
+.idea
