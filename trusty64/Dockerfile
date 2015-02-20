@@ -1,4 +1,4 @@
-FROM cloudfoundry/trusty64:minbase
+FROM ubuntu:trusty
 
 ADD build /tmp/build
 ADD assets /tmp/assets
