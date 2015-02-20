@@ -40,7 +40,16 @@ To upload the new rootfs to s3:
 ```shell
 export AMAZON_ACCESS_KEY_ID=your-aws-id
 export AMAZON_SECRET_ACCESS_KEY=your-aws-key
-./upload_stack lucid64
+./upload_stack lucid64 # or trusty64
+```
+
+# Uploading trusty rootfs to dockerhub
+
+```shell
+export DOCKERHUB_USERNAME=your-docker-hub-name
+export DOCKERHUB_PASSWORD=your-docker-password
+export DOCKERHUB_EMAIL=you@dockerhub-email.com
+./docker_push.sh
 ```
 
 # Updating rootfs blob in cf-release
