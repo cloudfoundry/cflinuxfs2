@@ -13,7 +13,7 @@ This repo contains scripts for creating warden root filesystems.
 `lucid64/build` has a list of packages that are passed to `apt-get install`.
 To add new packages, just add the name of the package to that list.
 
-`trusty64/build/install-packages.sh` has a list of packages passed to `apt-get install` as well.
+`cflinuxfs2/build/install-packages.sh` has a list of packages passed to `apt-get install` as well.
 
 # Creating a rootfs tarball
 
@@ -25,7 +25,7 @@ gem install bundler
 ./build_stack lucid64
 ```
 
-To create a rootfs for the trusty64 stack:
+To create a rootfs for the cflinuxfs2 stack:
 
 ```shell
 make
@@ -40,10 +40,10 @@ To upload the new rootfs to s3:
 ```shell
 export AMAZON_ACCESS_KEY_ID=your-aws-id
 export AMAZON_SECRET_ACCESS_KEY=your-aws-key
-./upload_stack lucid64 # or trusty64
+./upload_stack lucid64 # or cflinuxfs2
 ```
 
-# Uploading trusty rootfs to dockerhub
+# Uploading cflinuxfs2 rootfs to dockerhub
 
 ```shell
 export DOCKERHUB_USERNAME=your-docker-hub-name

@@ -1,19 +1,16 @@
-all: trusty64.tar.gz
+all: rootfs.tgz
 
-# trusty stack targets
-trusty64.cid: trusty64/Dockerfile
-	docker build -t cloudfoundry/trusty64 trusty64
+cflinuxfs2.cid: cflinuxfs2/Dockerfile
+	docker build -t cloudfoundry/cflinuxfs2 cflinuxfs2
+	docker run --cidfile=cflinuxfs2.cid cloudfoundry/cflinuxfs2 dpkg -l | tee cflinuxfs2_dpkg_l.out
 
-	# create a container to export
-	docker run --cidfile=trusty64.cid cloudfoundry/trusty64 dpkg -l | tee rootfs_trusty_dpkg_l.out
+cflinuxfs2.tar: cflinuxfs2.cid
+	docker export `cat cflinuxfs2.cid` > cflinuxfs2.tar
+	rm cflinuxfs2.cid
 
-trusty64.tar: trusty64.cid
-	docker export `cat trusty64.cid` > trusty64.tar
-	rm trusty64.cid
+cflinuxfs2.tar.gz: cflinuxfs2.tar
+	tar -C cflinuxfs2/assets -f cflinuxfs2.tar -r etc/hosts etc/timezone
+	gzip -f cflinuxfs2.tar
 
-trusty64.tar.gz: trusty64.tar
-	tar -C trusty64/assets -f trusty64.tar -r etc/hosts etc/timezone
-	gzip -f trusty64.tar
-
-rootfs.tgz: trusty64.tar.gz
-  cp trusty64.tar.gz trusty64/rootfs.tgz
+rootfs.tgz: cflinuxfs2.tar.gz
+	cp cflinuxfs2.tar.gz cflinuxfs2/rootfs.tgz
