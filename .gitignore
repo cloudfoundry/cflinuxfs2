@@ -3,6 +3,6 @@
 .vagrant
 *.tgz
 *.tar.gz
-rootfs_trusty_dpkg_l.out
+cflinuxfs2/cflinuxfs2_dpkg_l.out
 rootfs_lucid_dpkg_l.out
 .idea

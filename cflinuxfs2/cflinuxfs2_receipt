@@ -1,3 +1,7 @@
+Rootfs SHASUM: 586b6c1b319a6feed9f0631ac6e1de0329e0f085  cflinuxfs2/rootfs.tgz
+Docker Image: 5458903e04f7
+S3 ETag: a93e67295db0466422d2f435995e2f11
+
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
