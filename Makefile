@@ -22,7 +22,7 @@ upload_cflinuxfs2:
 	./upload_stack cflinuxfs2 > etag
 	./docker_push.sh
 	echo "Rootfs SHASUM: `shasum cflinuxfs2/rootfs.tgz`" > cflinuxfs2/cflinuxfs2_receipt
-	echo "Docker Image: `docker images | grep cloudfoundry/cflinuxfs2 | grep latest | awk '{ print \$3 }'`" >> cflinuxfs2/cflinuxfs2_receipt
+	echo "Docker Image: `docker images | grep cloudfoundry/cflinuxfs2 | grep latest | awk '{ print $3 }'`" >> cflinuxfs2/cflinuxfs2_receipt
 	echo "S3 ETag: `cat etag`" >> cflinuxfs2/cflinuxfs2_receipt
 	echo "" >> cflinuxfs2/cflinuxfs2_receipt
 	cat cflinuxfs2/cflinuxfs2_dpkg_l.out >> cflinuxfs2/cflinuxfs2_receipt
