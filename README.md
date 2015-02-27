@@ -69,3 +69,8 @@ To update rootfs package in cf-release overwrite rootfs blob cf-release/blobs/ro
 Run `bosh upload blobs` to upload package to bosh blobstore.
 
 After cf-release is updated with the new rootfs, future DEAs will automatically use that rootfs for its warden containers.
+
+# Downloading from S3
+
+http://cf-runtime-stacks.s3.amazonaws.com/lucid64.dev.tgz
+http://cf-runtime-stacks.s3.amazonaws.com/cflinuxfs2.dev.tgz
