@@ -2,6 +2,8 @@ Cloud Foundry Stacks
 ====================
 
 This repo contains scripts for creating warden root filesystems.
+* lucid64 derived from Ubuntu 10.04 (Lucid Lynx)
+* cflinuxfs2 derived from Ubuntu 14.04 (Trusty Tahr))
 
 # Dependencies
 
