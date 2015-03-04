@@ -3,28 +3,50 @@
 set -ex
 
 STACK=$1
+FILE=${STACK}.tar.gz
+S3_RETRIES=3
 
 if [ $STACK != "cflinuxfs2" ] && [ $STACK != "lucid64" ]; then
   echo "${STACK} is not a valid stack!"
   exit 1
 fi
 
+upload_s3() {
+  for i in $(seq 1 $S3_RETRIES); do
+    md5_hash_before=$(md5 $FILE | cut -d' ' -f4)
+    ./upload_to_s3 $STACK | tee etag
+    md5_hash_after=$(cat etag)
+
+    if [ "$md5_hash_before" != "$md5_hash_after" ]; then
+      if [ $i == $S3_RETRIES ]; then
+        echo "S3 Upload failed, MD5 hash does not match."
+        echo "Local file: $md5_hash_before"
+        echo "S3 file: $md5_hash_after"
+        exit 1
+      fi
+    else
+      break
+    fi
+  done
+}
+
 create_receipt() {
-  echo "Rootfs SHASUM: `shasum $STACK/rootfs.tgz`" > $STACK/${STACK}_receipt
+  echo "Rootfs SHASUM: `shasum $FILE`" > $STACK/${STACK}_receipt
   echo "Docker Image: `docker images | grep cloudfoundry/$STACK | grep latest | awk '{ print $3 }'`" >> $STACK/${STACK}_receipt
   echo "S3 ETag: `cat etag`" >> $STACK/${STACK}_receipt
   echo "" >> $STACK/${STACK}_receipt
-  cat $STACK/$STACK_dpkg_l.out >> $STACK/${STACK}_receipt
+  cat $STACK/${STACK}_dpkg_l.out >> $STACK/${STACK}_receipt
+  echo ""
+  echo "Don't forget to save the $STACK/${STACK}_receipt file!"
 }
 
 
 cleanup() {
   rm etag
-  rm $STACK/rootfs.tgz
-  echo "Don't forget to save the $STACK/${STACK}_receipt file"
 }
 
-./upload_to_s3 $STACK > etag
+trap cleanup EXIT
+
+upload_s3
 ./docker_push.sh $STACK
 create_receipt
-cleanup
