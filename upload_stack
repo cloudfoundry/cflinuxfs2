@@ -5,9 +5,9 @@ set -ex
 STACK=$1
 FILE=${STACK}.tar.gz
 S3_RETRIES=3
-MD5_CMD=md5
+MD5_CMD="md5 $FILE | cut -d' ' -f4"
 if [ "$(uname)" == "Linux" ]; then
-  MD5_CMD=md5sum
+  MD5_CMD="md5sum $FILE | cut -d' ' -f1"
 fi
 
 if [ $STACK != "cflinuxfs2" ] && [ $STACK != "lucid64" ]; then
@@ -17,7 +17,7 @@ fi
 
 upload_s3() {
   for i in $(seq 1 $S3_RETRIES); do
-    md5_hash_before=$($MD5_CMD $FILE | cut -d' ' -f4)
+    md5_hash_before=$($MD5_CMD)
     ./upload_to_s3 $STACK | tee etag
     md5_hash_after=$(cat etag)
 
