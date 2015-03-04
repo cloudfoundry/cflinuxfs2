@@ -17,7 +17,7 @@ fi
 
 upload_s3() {
   for i in $(seq 1 $S3_RETRIES); do
-    md5_hash_before=$($MD5_CMD)
+    md5_hash_before=$(bash -c "$MD5_CMD")
     ./upload_to_s3 $STACK | tee etag
     md5_hash_after=$(cat etag)
 
