@@ -1,6 +1,6 @@
-Rootfs SHASUM: 46e3eb31e76b7fc11db31cf4e2f0a1039a8d05f9  cflinuxfs2/rootfs.tgz
-Docker Image: 72a99d2dbb84
-S3 ETag: b2ffd6edbdabdeed81bacfb47f54a9e0
+Rootfs SHASUM: 4b21db5f9cb1dc97ecf481c15ea1e89408c42833  cflinuxfs2.tar.gz
+Docker Image: 350078f1ed5f
+S3 ETag: ddbed958103d2c98e7b299624bac5eee
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -444,7 +444,7 @@ ii  libxt6:amd64                        1:1.1.4-1                           amd6
 ii  libxvidcore4:amd64                  2:1.3.2-9ubuntu1                    amd64        Open source MPEG-4 video codec (library)
 ii  libyaml-0-2:amd64                   0.1.4-3ubuntu3.1                    amd64        Fast YAML 1.1 parser and emitter library
 ii  libyaml-dev:amd64                   0.1.4-3ubuntu3.1                    amd64        Fast YAML 1.1 parser and emitter library (development)
-ii  linux-libc-dev:amd64                3.13.0-46.75                        amd64        Linux Kernel Headers for development
+ii  linux-libc-dev:amd64                3.13.0-46.77                        amd64        Linux Kernel Headers for development
 ii  locales                             2.13+git20120306-12.1               all          common files for locale support
 ii  lockfile-progs                      0.1.17                              amd64        Programs for locking and unlocking files and mailboxes
 ii  login                               1:4.1.5.1-1ubuntu9                  amd64        system login tools

@@ -147,3 +147,5 @@ apt_get dist-upgrade
 apt_get install $packages_copied_from_lucid_script $packages_from_debootstrap
 
 apt-get clean
+
+rm -rf /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* /usr/share/lintian/* /usr/share/linda/*
