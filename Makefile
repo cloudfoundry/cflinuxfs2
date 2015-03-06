@@ -6,7 +6,8 @@ cflinuxfs2.cid: cflinuxfs2/Dockerfile
 	docker run --cidfile=cflinuxfs2.cid cloudfoundry/cflinuxfs2 dpkg -l | tee cflinuxfs2/cflinuxfs2_dpkg_l.out
 
 cflinuxfs2.tar: cflinuxfs2.cid
-	docker export `cat cflinuxfs2.cid` > /tmp/cflinuxfs2.tar
+	mkdir -p tmp
+	docker export `cat cflinuxfs2.cid` > tmp/cflinuxfs2.tar
 	# Always remove the cid file in order to grab updated package versions.
 	rm cflinuxfs2.cid
 
@@ -18,7 +19,8 @@ lucid64.cid: lucid64/Dockerfile
 	docker run --cidfile=lucid64.cid cloudfoundry/lucid64 dpkg -l | tee lucid64/lucid64_dpkg_l.out
 
 lucid64.tar: lucid64.cid
-	docker export `cat lucid64.cid` > /tmp/lucid64.tar
+	mkdir -p tmp
+	docker export `cat lucid64.cid` > tmp/lucid64.tar
 	# Always remove the cid file in order to grab updated package versions.
 	rm lucid64.cid
 
