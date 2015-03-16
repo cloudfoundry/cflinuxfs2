@@ -66,7 +66,7 @@ This will remove the `cflinuxfs2/rootfs.tgz` file, but the tarball `cflinuxfs2.t
 
 # Updating rootfs blob in cf-release
 
-To update rootfs package in cf-release overwrite rootfs blob cf-release/blobs/rootfs/[ROOTFS_NAME].tar.gz with the new tarball.
+Run `bosh add [ROOTFS_NAME].tar.gz blob rootfs ` to update rootfs package in cf-release.
 
 Run `bosh upload blobs` to upload package to bosh blobstore.
 

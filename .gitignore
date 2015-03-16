@@ -4,5 +4,6 @@
 *.tgz
 *.tar.gz
 cflinuxfs2/cflinuxfs2_dpkg_l.out
+lucid64/lucid64_dpkg_l.out 
 rootfs_lucid_dpkg_l.out
 .idea
