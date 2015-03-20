@@ -10,4 +10,7 @@ RUN bash /tmp/build/configure-core-dump-directory.sh
 RUN bash /tmp/build/configure-firstboot.sh
 RUN bash /tmp/build/diego-prep.sh
 
+# /app must exist so we can bind-mount it to /home/vcap in seed
+RUN mkdir /app
+
 RUN rm -rf /tmp/*
