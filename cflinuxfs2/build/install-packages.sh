@@ -126,6 +126,7 @@ libxslt1-dev
 libxslt1.1
 lsof
 lzma
+krb5-user
 ocaml-base-nox
 openssh-server
 openssl
