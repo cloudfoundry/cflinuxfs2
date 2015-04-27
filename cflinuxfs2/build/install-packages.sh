@@ -100,7 +100,6 @@ fuse-emulator-utils
 gdb
 git-core
 gnupg-curl
-graphicsmagick-libmagick-dev-compat
 imagemagick
 iputils-arping
 libaio1
@@ -141,6 +140,8 @@ traceroute
 unzip
 wget
 zip
+libmagickcore-dev
+libmagickwand-dev
 "
 
 cat > /etc/apt/sources.list <<EOS
