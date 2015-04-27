@@ -8,25 +8,42 @@ function apt_get() {
   apt-get -y --force-yes --no-install-recommends "$@"
 }
 
-# CHANGES from lucid64 packages:
-# - REPLACED libmagick9-dev with graphicsmagick-libmagick-dev-compat
-# - REMOVED libgraphviz4 as it does not exist in trusty
-# - REMOVED libpango1.0-common as it does not exist in trusty
-# - REMOVED laptop-detect
-packages_from_lucid_debootstrap="
+packages="
 aptitude
+bind9-host
+bison
+build-essential
+ca-certificates
+cron
+curl
 dmidecode
+dnsutils
+fakeroot
+flex
 fontconfig
+fuse-emulator-utils
+gdb
+git-core
+gnupg-curl
 gsfonts
+imagemagick
+iputils-arping
+krb5-user
 laptop-detect
+less
+libaio1
 libatk1.0-0
 libatm1
 libavahi-client3
 libavahi-common-data
 libavahi-common3
+libbz2-dev
 libcairo2
+libcap2-bin
 libclass-accessor-perl
 libcups2
+libcurl3
+libcurl3-dev
 libcwidget3
 libdatrie1
 libdirectfb-1.2-9
@@ -37,21 +54,36 @@ libdrm-intel1
 libdrm-nouveau2
 libdrm-radeon1
 libept1.4.12
+libfuse-dev
+libfuse2
 libgd2-noxpm-dev
 libgpm2
 libgraphviz-dev
 libgtk-3-0
 libgtk-3-common
+libicu-dev
 libilmbase-dev
 libilmbase6
 libio-string-perl
+libmagickcore-dev
+libmagickwand-dev
+libmysqlclient-dev
+libncurses5-dev
 libnl-3-200
 libopenexr-dev
 libopenexr6
 libpango1.0-0
 libparse-debianchangelog-perl
 libpixman-1-0
+libpq-dev
+libreadline6-dev
+libsasl2-modules
+libsigc++-2.0-0c2a
+libsqlite-dev
+libsqlite3-dev
+libssl-dev
 libsub-name-perl
+libsysfs2
 libthai-data
 libthai0
 libts-0.0-0
@@ -65,83 +97,39 @@ libxfixes3
 libxft2
 libxi6
 libxinerama1
-libxrandr2
-libxrender1
-libxt-dev
-libxt6
-shared-mime-info
-tasksel
-tasksel-data
-tsconf
-ttf-dejavu-core
-"
-
-## Pulled from Diego Trusty rootfs
-packages_copied_from_diego_trusty_script="
-cron
-fakeroot
-less
-libicu-dev
-libyaml-dev
-manpages
-manpages-dev
-python
-"
-
-packages_copied_from_lucid_script="
-bind9-host
-bison
-build-essential
-ca-certificates
-curl
-dnsutils
-flex
-fuse-emulator-utils
-gdb
-git-core
-gnupg-curl
-imagemagick
-iputils-arping
-libaio1
-libbz2-dev
-libcap2-bin
-libcurl3
-libcurl3-dev
-libfuse-dev
-libfuse2
-libmysqlclient-dev
-libncurses5-dev
-libpq-dev
-libreadline6-dev
-libsasl2-modules
-libsigc++-2.0-0c2a
-libsqlite-dev
-libsqlite3-dev
-libssl-dev
-libsysfs2
 libxml2
 libxml2-dev
+libxrandr2
+libxrender1
 libxslt1-dev
 libxslt1.1
+libxt-dev
+libxt6
+libyaml-dev
 lsof
 lzma
-krb5-user
+manpages
+manpages-dev
 ocaml-base-nox
 openssh-server
 openssl
 psmisc
+python
 quota
 rsync
+shared-mime-info
 sshfs
 strace
 sysstat
+tasksel
+tasksel-data
 tcpdump
 traceroute
+tsconf
+ttf-dejavu-core
 unzip
 wget
 zip
-libmagickcore-dev
-libmagickwand-dev
 "
 
 cat > /etc/apt/sources.list <<EOS
@@ -154,7 +142,7 @@ EOS
 apt_get install gpgv
 apt_get update
 apt_get dist-upgrade
-apt_get install $packages_copied_from_lucid_script $packages_from_lucid_debootstrap $packages_copied_from_diego_trusty_script ubuntu-minimal
+apt_get install $packages ubuntu-minimal
 
 apt-get clean
 
