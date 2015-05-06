@@ -84,6 +84,7 @@ bind9-host
 bison
 build-essential
 ca-certificates
+cmake
 curl
 dnsutils
 flex

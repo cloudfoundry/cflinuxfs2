@@ -14,6 +14,7 @@ bind9-host
 bison
 build-essential
 ca-certificates
+cmake
 cron
 curl
 dmidecode
