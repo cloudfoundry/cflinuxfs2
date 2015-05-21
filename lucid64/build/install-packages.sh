@@ -87,7 +87,6 @@ ca-certificates
 curl
 dnsutils
 flex
-fuse-utils
 gdb
 git
 gnupg-curl
@@ -98,8 +97,6 @@ libbz2-dev
 libcap2-bin
 libcurl3
 libcurl3-dev
-libfuse-dev
-libfuse2
 libmagick9-dev
 libmysqlclient-dev
 libncurses5-dev
@@ -123,7 +120,6 @@ openssl
 psmisc
 quota
 rsync
-sshfs
 strace
 sysstat
 tcpdump
