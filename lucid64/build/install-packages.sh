@@ -8,6 +8,7 @@ function apt_get() {
 
 packages_from_debootstrap="
 aptitude
+autoconf
 cron
 dmidecode
 dmsetup

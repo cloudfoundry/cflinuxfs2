@@ -10,6 +10,7 @@ function apt_get() {
 
 packages="
 aptitude
+autoconf
 bind9-host
 bison
 build-essential
