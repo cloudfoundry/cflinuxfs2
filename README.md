@@ -2,7 +2,6 @@ Cloud Foundry Stacks
 ====================
 
 This repo contains scripts for creating warden root filesystems.
-* lucid64 derived from Ubuntu 10.04 (Lucid Lynx)
 * cflinuxfs2 derived from Ubuntu 14.04 (Trusty Tahr))
 
 # Dependencies
@@ -12,20 +11,9 @@ This repo contains scripts for creating warden root filesystems.
 
 # Adding a new package to the rootfs
 
-`lucid64/build` has a list of packages that are passed to `apt-get install`.
-To add new packages, just add the name of the package to that list.
-
 `cflinuxfs2/build/install-packages.sh` has a list of packages passed to `apt-get install` as well.
 
 # Creating a rootfs tarball
-
-To create a rootfs for the lucid64 stack:
-
-```shell
-gem install bundler
-./init
-./build_stack lucid64
-```
 
 To create a rootfs for the cflinuxfs2 stack:
 
@@ -38,14 +26,6 @@ This will create the `cflinuxfs2/rootfs.tgz` file.
 # Uploading to s3 bucket
 
 s3 bucket is used by [warden-test-infrastructure](https://github.com/cloudfoundry/warden-test-infrastructure), so it needs to be uploaded there.
-
-To upload the new rootfs to s3:
-
-```shell
-export AMAZON_ACCESS_KEY_ID=your-aws-id
-export AMAZON_SECRET_ACCESS_KEY=your-aws-key
-./upload_stack lucid64
-```
 
 # Uploading cflinuxfs2 Stack to Docker Hub and S3 bucket
 
@@ -73,7 +53,5 @@ Run `bosh upload blobs` to upload package to bosh blobstore.
 After cf-release is updated with the new rootfs, future DEAs will automatically use that rootfs for its warden containers.
 
 # Downloading from S3
-
-http://cf-runtime-stacks.s3.amazonaws.com/lucid64.dev.tgz
 
 http://cf-runtime-stacks.s3.amazonaws.com/cflinuxfs2.dev.tgz

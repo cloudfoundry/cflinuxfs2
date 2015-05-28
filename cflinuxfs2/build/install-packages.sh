@@ -3,8 +3,6 @@ set -e -x
 source /etc/lsb-release
 
 function apt_get() {
-  # CHANGES from lucid64 script:
-  # - REMOVED `--fix-broken` option as seems to be missing in trusty
   apt-get -y --force-yes --no-install-recommends "$@"
 }
 

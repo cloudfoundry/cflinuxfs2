@@ -5,7 +5,7 @@ set -e
 STACK_NAME=$1
 
 if [ -z "$STACK_NAME" ]; then
-  echo 'Usage: build.sh STACK_NAME (e.g. lucid64)'
+  echo 'Usage: build.sh STACK_NAME (e.g. cflinuxfs2)'
   exit 1
 fi
 
