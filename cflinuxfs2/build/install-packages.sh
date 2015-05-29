@@ -65,11 +65,13 @@ libicu-dev
 libilmbase-dev
 libilmbase6
 libio-string-perl
+liblapack-dev
 libmagickcore-dev
 libmagickwand-dev
 libmysqlclient-dev
 libncurses5-dev
 libnl-3-200
+libopenblas-dev
 libopenexr-dev
 libopenexr6
 libpango1.0-0
