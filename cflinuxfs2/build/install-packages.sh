@@ -76,6 +76,7 @@ libopenexr-dev
 libopenexr6
 libpango1.0-0
 libparse-debianchangelog-perl
+libpcre3-dev
 libpixman-1-0
 libpq-dev
 libreadline6-dev
