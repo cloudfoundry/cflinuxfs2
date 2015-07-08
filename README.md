@@ -20,7 +20,7 @@ To create a rootfs for the cflinuxfs2 stack:
 make
 ```
 
-This will create the `cflinuxfs2/rootfs.tgz` file.
+This will create the `cflinuxfs2.tar.gz` file.
 
 # Uploading to s3 bucket
 
