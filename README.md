@@ -6,7 +6,6 @@ This repo contains scripts for creating warden root filesystems.
 
 # Dependencies
 
-* Vagrant
 * Ruby 1.9.3-p545 or higher
 
 # Adding a new package to the rootfs
