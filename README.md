@@ -2,11 +2,13 @@ Cloud Foundry Stacks
 ====================
 
 This repo contains scripts for creating warden root filesystems.
-* cflinuxfs2 derived from Ubuntu 14.04 (Trusty Tahr))
+
+* cflinuxfs2 derived from Ubuntu 14.04 (Trusty Tahr)
 
 # Dependencies
 
-* Ruby 1.9.3-p545 or higher
+* GNU make
+* Docker
 
 # Adding a new package to the rootfs
 
@@ -20,37 +22,31 @@ To create a rootfs for the cflinuxfs2 stack:
 make
 ```
 
-This will create the `cflinuxfs2.tar.gz` file.
+This will create the `cflinuxfs2.tar.gz` file, which is the artifact used as the rootfs in Cloud Foundry deployments.
 
-# Uploading to s3 bucket
+# Release pipeline
 
-s3 bucket is used by [warden-test-infrastructure](https://github.com/cloudfoundry/warden-test-infrastructure), so it needs to be uploaded there.
+The generation and release of a new rootfs happens on the [stacks](https://buildpacks.ci.cf-app.com/pipelines/stacks) CI pipeline.
 
-# Uploading cflinuxfs2 Stack to Docker Hub and S3 bucket
+* A new stack is generated with `make`.
 
-```shell
-export AMAZON_ACCESS_KEY_ID=your-aws-id
-export AMAZON_SECRET_ACCESS_KEY=your-aws-key
+* The generated tarball is deployed with the [runtime-passed branch](https://github.com/cloudfoundry/cf-release/tree/runtime-passed) of BOSH cf-release.
 
-export DOCKERHUB_USERNAME=your-docker-hub-name
-export DOCKERHUB_PASSWORD=your-docker-password
-export DOCKERHUB_EMAIL=you@dockerhub-email.com
+	```shell
+	mv stacks/cflinuxfs2.tar.gz cf-release/blobs/rootfs/cflinuxfs2.tar.gz
+	cd cf-release
+	bosh -n create release --force
+	bosh -n upload release
+	bosh -n deploy
+	```
+	
+* The [cf-acceptance-tests](https://github.com/cloudfoundry/cf-acceptance-tests) of that cf-release are then run against that deployment.
 
-make upload_cslinuxfs2
-```
+	```shell
+	cd cf-release/src/github.com/cloudfoundry/cf-acceptance-tests
+	go get github.com/tools/godep
+	godep restore
+	./bin/test --nodes=4
+	```
 
-This will use the `cflinuxfs2/rootfs.tgz` file created with `make` and upload it to S3 and the Docker Hub. It will also create a receipt file named `cflinuxfs2/cflinuxfs2_receipt` that contains the SHA sum of the rootfs, the Docker image ID, and the ETag value from S3.
-
-This will remove the `cflinuxfs2/rootfs.tgz` file, but the tarball `cflinuxfs2.tar.gz` will remain.
-
-# Updating rootfs blob in cf-release
-
-To update rootfs package in cf-release overwrite rootfs blob cf-release/blobs/rootfs/[ROOTFS_NAME].tar.gz with the new tarball.
-
-Run `bosh upload blobs` to upload package to bosh blobstore.
-
-After cf-release is updated with the new rootfs, future DEAs will automatically use that rootfs for its warden containers.
-
-# Downloading from S3
-
-http://cf-runtime-stacks.s3.amazonaws.com/cflinuxfs2.dev.tgz
+* Once all tests pass, the rootfs tarball can be found as a [Github Release](https://github.com/cloudfoundry/stacks/releases) and a [Docker Image](https://registry.hub.docker.com/u/cloudfoundry/cflinuxfs2/).
