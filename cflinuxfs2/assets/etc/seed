@@ -1,3 +1,0 @@
-mkdir /home/vcap/app
-chown vcap /home/vcap/app
-mount --bind /home/vcap/app /app
