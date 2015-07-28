@@ -1,3 +1,3 @@
 set -e -x
 
-ln -s /home/vcap/app /app
+cp /tmp/assets/etc/seed /etc/seed
