@@ -29,6 +29,7 @@ gsfonts
 imagemagick
 iputils-arping
 krb5-user
+jq
 laptop-detect
 less
 libaio1
