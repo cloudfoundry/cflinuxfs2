@@ -2,6 +2,24 @@ set -e -x
 
 echo "af_ZA
 am_ET
+ar_AE
+ar_BH
+ar_DZ
+ar_EG
+ar_IN
+ar_IQ
+ar_JO
+ar_KW
+ar_LB
+ar_LY
+ar_MA
+ar_OM
+ar_QA
+ar_SA
+ar_SD
+ar_SY
+ar_TN
+ar_YE
 be_BY
 bg_BG
 ca_ES
@@ -33,6 +51,7 @@ hy_AM
 is_IS
 it_CH
 it_IT
+iw_IL
 ja_JP
 kk_KZ
 ko_KR
