@@ -12,4 +12,4 @@ cflinuxfs2.tar: cflinuxfs2.cid
 	rm cflinuxfs2.cid
 
 cflinuxfs2.tar.gz: cflinuxfs2.tar
-	./bin/make_tarball.sh cflinuxfs2
+	docker run -w /stacks -v `pwd`:/stacks ubuntu:trusty ./bin/make_tarball.sh cflinuxfs2
