@@ -23,6 +23,7 @@ flex
 fontconfig
 fuse-emulator-utils
 gdb
+gfortran
 git-core
 gnupg-curl
 gsfonts
