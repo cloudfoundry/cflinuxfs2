@@ -1,8 +1,20 @@
 all: cflinuxfs2.tar.gz
 
+arch:=$(shell uname -m)
+ifneq ("","$(wildcard cflinuxfs2/Dockerfile.$(arch))")
+        docker_file := cflinuxfs2/Dockerfile.$(arch)
+else
+        docker_file := cflinuxfs2/Dockerfile
+endif
 
-cflinuxfs2.cid: cflinuxfs2/Dockerfile
-	docker build --no-cache -t cloudfoundry/cflinuxfs2 cflinuxfs2
+ifeq ("$(arch)","ppc64le")
+        docker_image := "ppc64le/ubuntu:trusty"
+else
+        docker_image := "ubuntu:trusty"
+endif
+
+cflinuxfs2.cid: 
+	docker build --no-cache -f $(docker_file) -t cloudfoundry/cflinuxfs2 cflinuxfs2
 	docker run --cidfile=cflinuxfs2.cid cloudfoundry/cflinuxfs2 dpkg -l | tee cflinuxfs2/cflinuxfs2_dpkg_l.out
 
 cflinuxfs2.tar: cflinuxfs2.cid
@@ -12,4 +24,4 @@ cflinuxfs2.tar: cflinuxfs2.cid
 	rm cflinuxfs2.cid
 
 cflinuxfs2.tar.gz: cflinuxfs2.tar
-	docker run -w /stacks -v `pwd`:/stacks ubuntu:trusty ./bin/make_tarball.sh cflinuxfs2
+	docker run -w /stacks -v `pwd`:/stacks $(docker_image) ./bin/make_tarball.sh cflinuxfs2
