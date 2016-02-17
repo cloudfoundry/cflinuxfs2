@@ -1,4 +1,4 @@
-Rootfs SHASUM: 76944254812cc430b8e1aa0b39b3825e5e6b84f6
+Rootfs SHASUM: 5d740369f9e00bb7c91c4b8fd49d1abfc38cc97f
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -86,7 +86,7 @@ ii  imagemagick-common                 8:6.7.7.10-6ubuntu3                 all  
 ii  init-system-helpers                1.14                                all          helper tools for all init systems
 ii  initramfs-tools                    0.103ubuntu4.2                      all          tools for generating an initramfs
 ii  initramfs-tools-bin                0.103ubuntu4.2                      amd64        binaries used by initramfs-tools
-ii  initscripts                        2.88dsf-41ubuntu6.2                 amd64        scripts for initializing and shutting down the system
+ii  initscripts                        2.88dsf-41ubuntu6.3                 amd64        scripts for initializing and shutting down the system
 ii  insserv                            1.14.0-5ubuntu2                     amd64        boot sequence organizer using LSB init.d script dependency information
 ii  iproute2                           3.12.0-2ubuntu1                     amd64        networking and traffic control tools
 ii  iputils-arping                     3:20121221-4ubuntu1.1               amd64        Tool to send ICMP echo requests to an ARP address
@@ -224,7 +224,7 @@ ii  libgomp1:amd64                     4.8.4-2ubuntu1~14.04.1              amd64
 ii  libgpg-error-dev                   1.12-0.2ubuntu1                     amd64        library for common error values and messages in GnuPG components (development)
 ii  libgpg-error0:amd64                1.12-0.2ubuntu1                     amd64        library for common error values and messages in GnuPG components
 ii  libgpm2:amd64                      1.20.4-6.1                          amd64        General Purpose Mouse - shared library
-ii  libgraphite2-3:amd64               1.2.4-1ubuntu1                      amd64        Font rendering engine for Complex Scripts -- library
+ii  libgraphite2-3:amd64               1.2.4-1ubuntu1.1                    amd64        Font rendering engine for Complex Scripts -- library
 ii  libgraphviz-dev                    2.36.0-0ubuntu3.1                   amd64        graphviz libs and headers against which to build applications
 ii  libgsm1:amd64                      1.0.13-4                            amd64        Shared libraries for GSM speech compressor
 ii  libgssapi-krb5-2:amd64             1.12+dfsg-2ubuntu5.2                amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
@@ -537,8 +537,8 @@ ii  sshfs                              2.5-1ubuntu1                        amd64
 ii  strace                             4.8-1ubuntu5                        amd64        A system call tracer
 ii  sudo                               1.8.9p5-1ubuntu1.2                  amd64        Provide limited super user privileges to specific users
 ii  sysstat                            10.2.0-1                            amd64        system performance tools for Linux
-ii  sysv-rc                            2.88dsf-41ubuntu6.2                 all          System-V-like runlevel change mechanism
-ii  sysvinit-utils                     2.88dsf-41ubuntu6.2                 amd64        System-V-like utilities
+ii  sysv-rc                            2.88dsf-41ubuntu6.3                 all          System-V-like runlevel change mechanism
+ii  sysvinit-utils                     2.88dsf-41ubuntu6.3                 amd64        System-V-like utilities
 ii  tar                                1.27.1-1                            amd64        GNU version of the tar archiving utility
 ii  tasksel                            2.88ubuntu15                        all          Tool for selecting tasks for installation on Debian systems
 ii  tasksel-data                       2.88ubuntu15                        all          Official tasks used for installation of Debian systems
