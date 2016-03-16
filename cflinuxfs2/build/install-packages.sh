@@ -69,7 +69,7 @@ libio-string-perl
 liblapack-dev
 libmagickcore-dev
 libmagickwand-dev
-libmysqlclient-dev
+libmariadbd-dev
 libncurses5-dev
 libnl-3-200
 libopenblas-dev
