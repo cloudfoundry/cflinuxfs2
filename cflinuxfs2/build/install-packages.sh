@@ -6,6 +6,14 @@ function apt_get() {
   apt-get -y --force-yes --no-install-recommends "$@"
 }
 
+function install_mysql_so_files() {
+    apt_get install libmysqlclient-dev
+    tmp=`mktemp -d`
+    mv /usr/lib/x86_64-linux-gnu/libmysqlclient* $tmp
+    apt_get remove libmysqlclient-dev libmysqlclient18
+    mv $tmp/* /usr/lib/x86_64-linux-gnu/
+}
+
 packages="
 aptitude
 autoconf
@@ -69,7 +77,7 @@ libio-string-perl
 liblapack-dev
 libmagickcore-dev
 libmagickwand-dev
-libmariadbd-dev
+libmariadbclient-dev
 libncurses5-dev
 libnl-3-200
 libopenblas-dev
@@ -152,6 +160,8 @@ EOS
 apt_get install gpgv
 apt_get update
 apt_get dist-upgrade
+# TODO: deprecate libmysqlclient
+install_mysql_so_files
 apt_get install $packages ubuntu-minimal
 
 apt-get clean
