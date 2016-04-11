@@ -140,6 +140,7 @@ traceroute
 tsconf
 ttf-dejavu-core
 unzip
+uuid-dev
 wget
 zip
 "
