@@ -1,16 +1,14 @@
 all: cflinuxfs2.tar.gz
 
 arch:=$(shell uname -m)
-ifneq ("","$(wildcard cflinuxfs2/Dockerfile.$(arch))")
-        docker_file := cflinuxfs2/Dockerfile.$(arch)
-else
-        docker_file := cflinuxfs2/Dockerfile
-endif
-
 ifeq ("$(arch)","ppc64le")
         docker_image := "ppc64le/ubuntu:trusty"
+        docker_file := cflinuxfs2/Dockerfile.$(arch)
+        $(shell cp cflinuxfs2/Dockerfile $(docker_file))
+        $(shell sed -i 's/FROM ubuntu:trusty/FROM ppc64le\/ubuntu:trusty/g' $(docker_file))
 else
         docker_image := "ubuntu:trusty"
+        docker_file := cflinuxfs2/Dockerfile
 endif
 
 cflinuxfs2.cid: 
