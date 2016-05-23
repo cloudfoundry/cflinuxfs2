@@ -7,11 +7,15 @@ function apt_get() {
 }
 
 function install_mysql_so_files() {
+    mysqlpath="/usr/lib/x86_64-linux-gnu"
+    if [ "`uname -m`" == "ppc64le" ]; then
+        mysqlpath="/usr/lib/powerpc64le-linux-gnu"
+    fi
     apt_get install libmysqlclient-dev
     tmp=`mktemp -d`
-    mv /usr/lib/x86_64-linux-gnu/libmysqlclient* $tmp
+    mv $mysqlpath/libmysqlclient* $tmp
     apt_get remove libmysqlclient-dev libmysqlclient18
-    mv $tmp/* /usr/lib/x86_64-linux-gnu/
+    mv $tmp/* $mysqlpath/
 }
 
 packages="
