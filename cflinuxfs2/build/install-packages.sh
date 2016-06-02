@@ -173,17 +173,3 @@ apt-get clean
 
 rm -rf /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* /usr/share/lintian/* /usr/share/linda/*
 
-#Imagemagick policy.xml change
-cat > /etc/ImageMagick/policy.xml <<'IMAGEMAGICK_POLICY'
-<policymap>
-  <policy domain="coder" rights="none" pattern="EPHEMERAL" />
-  <policy domain="coder" rights="none" pattern="URL" />
-  <policy domain="coder" rights="none" pattern="HTTPS" />
-  <policy domain="coder" rights="none" pattern="MVG" />
-  <policy domain="coder" rights="none" pattern="MSL" />
-  <policy domain="coder" rights="none" pattern="TEXT" />
-  <policy domain="coder" rights="none" pattern="SHOW" />
-  <policy domain="coder" rights="none" pattern="WIN" />
-  <policy domain="coder" rights="none" pattern="PLT" />
-</policymap>
-IMAGEMAGICK_POLICY

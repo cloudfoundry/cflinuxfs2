@@ -131,7 +131,7 @@ apt-get install -y gocr > /dev/null
     }
 
     it "does not display the secrets as a text label in the generated image" do
-      expect(exploit_output).to include("not authorized `file_read.mvg'")
+      expect(exploit_output).to include("no decode delegate for this image format `file_read.mvg'")
       expect(exploit_output).to include("out.png - No such file or directory")
       expect(exploit_output).to_not include("234")
     end
