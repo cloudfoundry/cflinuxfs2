@@ -70,6 +70,7 @@ libept1.4.12
 libfuse-dev
 libfuse2
 libgd2-noxpm-dev
+libgmp-dev
 libgpm2
 libgraphviz-dev
 libgtk-3-0
