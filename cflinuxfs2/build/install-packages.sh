@@ -132,7 +132,6 @@ openssh-server
 openssl
 psmisc
 python
-python-dev
 quota
 rsync
 shared-mime-info
