@@ -13,6 +13,29 @@ describe "ImageMagick" do
 
   after { exploit_script.unlink }
 
+  context "pipe character does not execute subsequent commands" do
+    let(:exploit_setup) {
+      <<-SETUP
+tee exploit.mvg > /dev/null <<EOF
+push graphic-context
+viewbox 0 0 640 480
+image copy 200,200 100,100 "|echo EXPLOITED > /tmp/exploit.txt;"
+pop graphic-context
+EOF
+      SETUP
+    }
+    let(:exploit_command) {
+      <<-EXPLOIT
+        convert exploit.mvg out.png; cat "/tmp/exploit.txt"
+      EXPLOIT
+    }
+
+    it "does not cause code execution" do
+      expect(exploit_output).to include("no decode delegate for this image format")
+      expect(exploit_output).to_not include("EXPLOITED")
+    end
+  end
+
   context "insufficient shell character filtering" do
     let(:exploit_setup) { "echo EXPLOIT EXPLOITED > /tmp/secret.txt" }
     let(:exploit_command) {
