@@ -26,7 +26,7 @@ This will create the `cflinuxfs2.tar.gz` file, which is the artifact used as the
 
 # Creating a BOSH release from the rootfs tarball
 
-To start, clone the repository containing the cflinuxfs2-rootfs BOSH release:
+To start, clone the [repository](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release) containing the cflinuxfs2-rootfs BOSH release:
 
 ```shell
 git clone git@github.com:cloudfoundry/cflinuxfs2-rootfs-release.git`
@@ -50,6 +50,11 @@ bosh upload release <generated-dev-release-tar-file>
 
 If your Diego deployment manifest has `version: latest` indicated for the `cflinuxfs2-rootfs` release, then redeploying your Diego will enable this new rootfs to be used in your app containers.
 
+# Testing the rootfs
+
+To run the local tests, just run `rspec`. If the top level of this repo contains a file named `cflinuxfs2.tar.gz`, the tests will be run against this file. Otherwise, `make` will  be run to create a new rootfs.
+
+To test the rootfs BOSH release, see the instructions [here](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release/blob/master/README.md)
 
 # Release pipeline
 
