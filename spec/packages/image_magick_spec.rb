@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'Tempfile'
+require 'tempfile'
 
 describe "ImageMagick" do
   let(:exploit_script_name) { "exploit.sh" }
