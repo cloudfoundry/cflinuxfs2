@@ -94,6 +94,7 @@ libpcre3-dev
 libpixman-1-0
 libpq-dev
 libreadline6-dev
+libsasl2-dev
 libsasl2-modules
 libsigc++-2.0-0c2a
 libsqlite-dev
