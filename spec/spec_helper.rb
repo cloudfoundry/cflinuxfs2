@@ -1,4 +1,7 @@
 RSpec.configure do |config|
+  config.color = true
+  config.tty = true
+
   config.before(:all) do
     unless File.exist?("cflinuxfs2.tar.gz")
       puts "Running `make` to create cflinuxfs2.tar.gz"
