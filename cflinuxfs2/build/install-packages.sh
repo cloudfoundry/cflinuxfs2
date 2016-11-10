@@ -24,6 +24,7 @@ autoconf
 bind9-host
 bison
 build-essential
+bzr
 ca-certificates
 cmake
 cron
@@ -128,6 +129,7 @@ lsof
 lzma
 manpages
 manpages-dev
+mercurial
 ocaml-base-nox
 openssh-server
 openssl
@@ -138,6 +140,7 @@ rsync
 shared-mime-info
 sshfs
 strace
+subversion
 sysstat
 tasksel
 tasksel-data
