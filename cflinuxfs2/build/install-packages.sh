@@ -58,7 +58,7 @@ libclass-accessor-perl
 libcups2
 libcurl3
 libcurl3-dev
-libcwidget3
+libcwidget3v5
 libdatrie1
 libdirectfb-1.2-9
 libdjvulibre-dev
@@ -67,7 +67,7 @@ libdjvulibre21
 libdrm-intel1
 libdrm-nouveau2
 libdrm-radeon1
-libept1.4.12
+libept1.5.0
 libfuse-dev
 libfuse2
 libgd2-noxpm-dev
@@ -78,17 +78,17 @@ libgtk-3-0
 libgtk-3-common
 libicu-dev
 libilmbase-dev
-libilmbase6
+libilmbase12
 libio-string-perl
 liblapack-dev
 libmagickcore-dev
 libmagickwand-dev
-libmariadbclient-dev
+libmariadb-client-lgpl-dev
 libncurses5-dev
 libnl-3-200
 libopenblas-dev
 libopenexr-dev
-libopenexr6
+libopenexr22
 libpango1.0-0
 libparse-debianchangelog-perl
 libpcre3-dev
@@ -97,7 +97,7 @@ libpq-dev
 libreadline6-dev
 libsasl2-dev
 libsasl2-modules
-libsigc++-2.0-0c2a
+libsigc++-2.0-0v5
 libsqlite-dev
 libsqlite3-dev
 libssl-dev
@@ -105,8 +105,7 @@ libsub-name-perl
 libsysfs2
 libthai-data
 libthai0
-libts-0.0-0
-libxapian22
+libxapian22v5
 libxcb-render-util0
 libxcb-render0
 libxcomposite1
@@ -146,7 +145,6 @@ tasksel
 tasksel-data
 tcpdump
 traceroute
-tsconf
 ttf-dejavu-core
 unzip
 uuid-dev
@@ -172,7 +170,7 @@ apt_get update
 apt_get dist-upgrade
 # TODO: deprecate libmysqlclient
 install_mysql_so_files
-apt_get install $packages ubuntu-minimal
+apt_get install $packages
 
 apt-get clean
 
