@@ -19,4 +19,6 @@ pushd /tmp/ruby-build
   CONFIGURE_OPTS=$OPTS \
     /usr/local/bin/ruby-build $RUBY_VERSION /usr
 popd
+
 rm -rf /tmp/ruby-build*
+rm -f /usr/lib/ruby/gems/2.3.0/cache/*
