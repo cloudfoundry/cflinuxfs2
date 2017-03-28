@@ -11,7 +11,7 @@ RSpec.configure do |config|
 				end
 			end
     end
-    puts "Importing stacks/testing docker image created from cflinuxfs2.tar.gz"
-    `docker import cflinuxfs2.tar.gz stacks/testing`
+    puts "Importing cflinuxfs2/testing docker image created from cflinuxfs2.tar.gz"
+    `docker import cflinuxfs2.tar.gz cflinuxfs2/testing`
   end
 end

@@ -4,7 +4,7 @@ require 'tempfile'
 describe "ImageMagick" do
   let(:exploit_script_name) { "exploit.sh" }
   let(:exploit_script)      { Tempfile.new(exploit_script_name, ENV['HOME']) }
-  let(:exploit_output)      { `docker run -v #{exploit_script.path}:/#{exploit_script_name} stacks/testing /bin/bash -c /#{exploit_script_name} 2>&1` }
+  let(:exploit_output)      { `docker run -v #{exploit_script.path}:/#{exploit_script_name} cflinuxfs2/testing /bin/bash -c /#{exploit_script_name} 2>&1` }
 
   before do
     exploit_script.write("#{exploit_setup}\n#{exploit_command}")

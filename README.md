@@ -1,4 +1,4 @@
-Cloud Foundry Stacks
+Cloud Foundry cflinuxfs2
 ====================
 
 This repo contains scripts for creating warden root filesystems.
@@ -58,12 +58,12 @@ To test the rootfs BOSH release, see the instructions [here](https://github.com/
 
 # Release pipeline
 
-The generation and release of a new rootfs happens on the [stacks](https://buildpacks.ci.cf-app.com/pipelines/stacks) CI pipeline.
+The generation and release of a new rootfs happens on the [cflinuxfs2](https://buildpacks.ci.cf-app.com/pipelines/cflinuxfs2) CI pipeline.
 
 * A new stack is generated with `make`.
 
-* A dev BOSH release of that new stack is generated and deployed to the BOSH Lite at stacks.buildpacks.ci.cf-app.com and the rootfs smoke tests run.
+* A dev BOSH release of that new stack is generated and deployed to the BOSH Lite at cflinuxfs2.buildpacks.ci.cf-app.com and the rootfs smoke tests run.
 
 * CF and Diego are deployed to that BOSH Lite. The [cf-acceptance-tests](https://github.com/cloudfoundry/cf-acceptance-tests) are then run against the deployment.
 
-* Once all tests pass and the product manager ships the release, the rootfs tarball can be found as a [Github Release](https://github.com/cloudfoundry/stacks/releases), [Docker Image](https://registry.hub.docker.com/u/cloudfoundry/cflinuxfs2/), and as a [BOSH release](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release). A commit is also made to update the blobs on cf-release develop.
+* Once all tests pass and the product manager ships the release, the rootfs tarball can be found as a [Github Release](https://github.com/cloudfoundry/cflinuxfs2/releases), [Docker Image](https://registry.hub.docker.com/u/cloudfoundry/cflinuxfs2/), and as a [BOSH release](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release). A commit is also made to update the blobs on cf-release develop.
