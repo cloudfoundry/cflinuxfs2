@@ -62,7 +62,7 @@ The generation and release of a new rootfs happens on the [cflinuxfs2](https://b
 
 * A new stack is generated with `make`.
 
-* A dev BOSH release of that new stack is generated and deployed to the BOSH Lite at cflinuxfs2.buildpacks.ci.cf-app.com and the rootfs smoke tests run.
+* A dev BOSH release of that new stack is generated and deployed to the BOSH Lite at stacks.buildpacks.ci.cf-app.com and the rootfs smoke tests run.
 
 * CF and Diego are deployed to that BOSH Lite. The [cf-acceptance-tests](https://github.com/cloudfoundry/cf-acceptance-tests) are then run against the deployment.
 
