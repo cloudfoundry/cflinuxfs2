@@ -48,7 +48,7 @@ ii  dpkg                               1.17.5ubuntu5.7                          
 ii  dpkg-dev                           1.17.5ubuntu5.7                            all          Debian package development tools
 ii  e2fslibs:amd64                     1.42.9-3ubuntu1.3                          amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                          1.42.9-3ubuntu1.3                          amd64        ext2/ext3/ext4 file system utilities
-ii  eject                              2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1 amd64        ejects CDs and operates CD-Changers under Linux
+ii  eject                              2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1  amd64        ejects CDs and operates CD-Changers under Linux
 ii  fakeroot                           1.20-3ubuntu2                              amd64        tool for simulating superuser privileges
 ii  file                               1:5.14-2ubuntu3.3                          amd64        Determines file type using "magic" numbers
 ii  findutils                          4.4.2-7                                    amd64        utilities for finding files--find, xargs
