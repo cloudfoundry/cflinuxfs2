@@ -26,11 +26,11 @@ This will create the `cflinuxfs2.tar.gz` file, which is the artifact used as the
 
 # Creating a BOSH release from the rootfs tarball
 
-To start, clone the [repository](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release) containing the cflinuxfs2-rootfs BOSH release:
+To start, clone the [repository](https://github.com/cloudfoundry/cflinuxfs2-release) containing the cflinuxfs2-rootfs BOSH release:
 
 ```shell
-git clone git@github.com:cloudfoundry/cflinuxfs2-rootfs-release.git`
-cd cflinuxfs2-rootfs-release`
+git clone git@github.com:cloudfoundry/cflinuxfs2-release.git`
+cd cflinuxfs2-release`
 ```
 
 Replace the old cflinuxfs2 tarball with the new tarball created above:
@@ -54,7 +54,7 @@ If your Diego deployment manifest has `version: latest` indicated for the `cflin
 
 To run the local tests, just run `rspec`. If the top level of this repo contains a file named `cflinuxfs2.tar.gz`, the tests will be run against this file. Otherwise, `make` will  be run to create a new rootfs.
 
-To test the rootfs BOSH release, see the instructions [here](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release/blob/master/README.md)
+To test the rootfs BOSH release, see the instructions [here](https://github.com/cloudfoundry/cflinuxfs2-release/blob/master/README.md)
 
 # Release pipeline
 
@@ -62,8 +62,8 @@ The generation and release of a new rootfs happens on the [cflinuxfs2](https://b
 
 * A new stack is generated with `make`.
 
-* A dev BOSH release of that new stack is generated and deployed to the BOSH Lite at stacks.buildpacks.ci.cf-app.com and the rootfs smoke tests run.
+* A dev BOSH release of that new stack is generated and deployed to the BOSH Lite at cflinuxfs2.buildpacks.ci.cf-app.com and the rootfs smoke tests run.
 
 * CF and Diego are deployed to that BOSH Lite. The [cf-acceptance-tests](https://github.com/cloudfoundry/cf-acceptance-tests) are then run against the deployment.
 
-* Once all tests pass and the product manager ships the release, the rootfs tarball can be found as a [Github Release](https://github.com/cloudfoundry/cflinuxfs2/releases), [Docker Image](https://registry.hub.docker.com/u/cloudfoundry/cflinuxfs2/), and as a [BOSH release](https://github.com/cloudfoundry/cflinuxfs2-rootfs-release). A commit is also made to update the blobs on cf-release develop.
+* Once all tests pass and the product manager ships the release, the rootfs tarball can be found as a [Github Release](https://github.com/cloudfoundry/cflinuxfs2/releases), [Docker Image](https://registry.hub.docker.com/u/cloudfoundry/cflinuxfs2/), and as a [BOSH release](https://github.com/cloudfoundry/cflinuxfs2-release). A commit is also made to update the blobs on cf-release develop.
