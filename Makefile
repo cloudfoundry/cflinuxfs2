@@ -22,4 +22,4 @@ cflinuxfs2.tar: cflinuxfs2.cid
 	rm cflinuxfs2.cid
 
 cflinuxfs2.tar.gz: cflinuxfs2.tar
-	docker run -w /cflinuxfs2 -v `pwd`:/cflinuxfs2 $(docker_image) ./bin/make_tarball.sh cflinuxfs2
+	docker run -w /cflinuxfs2 -v `pwd`:/cflinuxfs2 "ubuntu:trusty" bash -c "gzip -f tmp/cflinuxfs2.tar && mv tmp/cflinuxfs2.tar.gz ."
