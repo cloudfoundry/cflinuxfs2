@@ -1,137 +1,147 @@
 set -e -x
 
-source /etc/lsb-release
+# source /etc/lsb-release
 
-function apt_get() {
-  apt-get -y --force-yes --no-install-recommends "$@"
-}
+# function apt_get() {
+#   apt-get -y --force-yes --no-install-recommends "$@"
+# }
 
-function install_mysql_so_files() {
-    mysqlpath="/usr/lib/x86_64-linux-gnu"
-    if [ "`uname -m`" == "ppc64le" ]; then
-        mysqlpath="/usr/lib/powerpc64le-linux-gnu"
-    fi
-    apt_get install libmysqlclient-dev
-    tmp=`mktemp -d`
-    mv $mysqlpath/libmysqlclient* $tmp
-    apt_get remove libmysqlclient-dev libmysqlclient18
-    mv $tmp/* $mysqlpath/
-}
+# function install_mysql_so_files() {
+#     mysqlpath="/usr/lib/x86_64-linux-gnu"
+#     if [ "`uname -m`" == "ppc64le" ]; then
+#         mysqlpath="/usr/lib/powerpc64le-linux-gnu"
+#     fi
+#     apt_get install libmysqlclient-dev
+#     tmp=`mktemp -d`
+#     mv $mysqlpath/libmysqlclient* $tmp
+#     apt_get remove libmysqlclient-dev libmysqlclient18
+#     mv $tmp/* $mysqlpath/
+# }
 
 packages="
-aptitude
+# Additional packages needed on openSUSE
+tar
+gcc
+gcc-c++
+util-linux-systemd
+sudo
+netcat-openbsd
+which
+glibc-locale
+# ----------
+zypper-aptitude
 autoconf
-bind9-host
+bind-utils
 bison
-build-essential
+# build-essential ?
 bzr
 ca-certificates
 cmake
 cron
 curl
 dmidecode
-dnsutils
-fakeroot
+# dnsutils ?
+# fakeroot ?
 flex
 fontconfig
-fuse-emulator-utils
+# fuse-emulator-utils ?
 gdb
 git-core
-gnupg-curl
-gsfonts
-imagemagick
-iputils-arping
-krb5-user
+# gnupg-curl ?
+# gsfonts ?
+ImageMagick
+# iputils-arping ? iputils
+# krb5-user ?
 jq
-laptop-detect
+# laptop-detect ?
 less
 libaio1
-libatk1.0-0
+libatk-1_0-0
 libatm1
 libavahi-client3
-libavahi-common-data
+# libavahi-common-data ?
 libavahi-common3
-libbz2-dev
+libbz2-devel
 libcairo2
-libcap2-bin
-libclass-accessor-perl
-libcups2
-libcurl3
-libcurl3-dev
-libcwidget3
+# libcap2-bin ?
+perl-Class-Accessor
+# libcups2 ?
+libcurl4
+libcurl-devel
+# libcwidget3 ?
 libdatrie1
-libdirectfb-1.2-9
-libdjvulibre-dev
-libdjvulibre-text
+libdirectfb-1_7-1
+libdjvulibre-devel
+# libdjvulibre-text ?
 libdjvulibre21
-libdrm-intel1
-libdrm-nouveau2
-libdrm-radeon1
-libept1.4.12
-libfuse-dev
+libdrm_intel1
+libdrm_nouveau2
+libdrm_radeon1
+# libept1.4.12 ?
+# libfuse-dev ?
 libfuse2
-libgd2-noxpm-dev
-libgmp-dev
-libgpm2
-libgraphviz-dev
+# libgd2-noxpm-dev ?
+# libgmp-dev ?
+# libgpm2 ?
+# libgraphviz-dev ?
 libgtk-3-0
-libgtk-3-common
-libicu-dev
-libilmbase-dev
-libilmbase6
-libio-string-perl
-liblapack-dev
-libmagickcore-dev
-libmagickwand-dev
-libmariadbclient-dev
-libncurses5-dev
-libnl-3-200
-libopenblas-dev
-libopenexr-dev
-libopenexr6
-libpango1.0-0
-libparse-debianchangelog-perl
-libpcre3-dev
+# libgtk-3-common ?
+libicu-devel
+# libilmbase-dev ?
+# libilmbase6 ?
+perl-IO-String
+lapack-devel
+# libmagickcore-dev ?
+# libmagickwand-dev ?
+# libmariadbclient-dev ?
+ncurses-devel
+libnl3-200
+openblas-devel
+openexr-devel
+# libopenexr6 ?
+libpango-1_0-0
+# libparse-debianchangelog-perl ?
+pcre-devel
 libpixman-1-0
-libpq-dev
-libreadline6-dev
-libsasl2-dev
-libsasl2-modules
-libsigc++-2.0-0c2a
-libsqlite-dev
-libsqlite3-dev
-libssl-dev
-libsub-name-perl
-libsysfs2
+postgresql-devel
+readline-devel
+# libsasl2-dev ? libsasl2-3
+# libsasl2-modules
+libsigc++2-devel
+sqlite2-devel
+sqlite3-devel
+libopenssl-devel
+perl-Sub-Name
+# libsysfs2 ? sysfsutils
 libthai-data
 libthai0
-libts-0.0-0
+libts-1_0-0
 libxapian22
 libxcb-render-util0
 libxcb-render0
-libxcomposite1
-libxcursor1
-libxdamage1
-libxfixes3
-libxft2
-libxi6
-libxinerama1
-libxml2
-libxml2-dev
-libxrandr2
-libxrender1
-libxslt1-dev
-libxslt1.1
-libxt-dev
-libxt6
-libyaml-dev
+libXcomposite1
+libXcursor1
+libXdamage1
+libXfixes3
+libXft2
+libXi6
+libXinerama1
+libxml2-2
+libxml2-devel
+libXrandr2
+libXrender1
+# libxslt1-dev ? libxslt1
+# libxslt1.1 ?
+libXt-devel
+libXt6
+libyaml-devel
 lsof
-lzma
-manpages
-manpages-dev
+# lzma ? (only liblzma5)
+# manpages ?
+# manpages-dev ?
 mercurial
-ocaml-base-nox
-openssh-server
+# ocaml-base-nox ?
+openssh
 openssl
 psmisc
 python
@@ -142,39 +152,35 @@ sshfs
 strace
 subversion
 sysstat
-tasksel
-tasksel-data
+# tasksel ?
+# tasksel-data ?
 tcpdump
 traceroute
-tsconf
-ttf-dejavu-core
+# tsconf ?
+# ttf-dejavu-core ? dejavu-fonts
 unzip
-uuid-dev
+uuid-devel
 wget
 zip
 "
-if [ "`uname -m`" == "ppc64le" ]; then
-packages=$(sed '/\b\(libopenblas-dev\|libdrm-intel1\|dmidecode\)\b/d' <<< "${packages}")
-ubuntu_url="http://ports.ubuntu.com/ubuntu-ports"
-else
-ubuntu_url="http://archive.ubuntu.com/ubuntu"
-fi
+packages=$(sed '/^#/d' <<< "${packages}")
 
-cat > /etc/apt/sources.list <<EOS
-deb $ubuntu_url $DISTRIB_CODENAME main universe multiverse
-deb $ubuntu_url $DISTRIB_CODENAME-updates main universe multiverse
-deb $ubuntu_url $DISTRIB_CODENAME-security main universe multiverse
-EOS
+# cat > /etc/apt/sources.list <<EOS
+# deb $ubuntu_url $DISTRIB_CODENAME main universe multiverse
+# deb $ubuntu_url $DISTRIB_CODENAME-updates main universe multiverse
+# deb $ubuntu_url $DISTRIB_CODENAME-security main universe multiverse
+# EOS
 
-# install gpgv so we can update
-apt_get install gpgv
-apt_get update
-apt_get dist-upgrade
-# TODO: deprecate libmysqlclient
-install_mysql_so_files
-apt_get install $packages ubuntu-minimal
+# # install gpgv so we can update
+# apt_get install gpgv
+# apt_get update
+# apt_get dist-upgrade
+# # TODO: deprecate libmysqlclient
+# install_mysql_so_files
+# apt_get install $packages ubuntu-minimal
+zypper install -y $packages
 
-apt-get clean
+# apt-get clean
 
-rm -rf /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* /usr/share/lintian/* /usr/share/linda/*
+# rm -rf /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* /usr/share/lintian/* /usr/share/linda/*
 

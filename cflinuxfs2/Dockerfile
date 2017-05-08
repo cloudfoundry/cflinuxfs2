@@ -1,11 +1,11 @@
-FROM ubuntu:trusty
+FROM opensuse:leap
 
 ADD build /tmp/build
 ADD assets /tmp/assets
 
 RUN bash /tmp/build/configure-locale-timezone.sh
 RUN bash /tmp/build/install-packages.sh
-RUN bash /tmp/build/generate-all-locales.sh
+# RUN bash /tmp/build/generate-all-locales.sh
 RUN bash /tmp/build/install-ruby.sh 2.3.3
 RUN bash /tmp/build/configure-core-dump-directory.sh
 RUN bash /tmp/build/configure-firstboot.sh
