@@ -179,8 +179,7 @@ packages=$(sed '/^#/d' <<< "${packages}")
 # install_mysql_so_files
 # apt_get install $packages ubuntu-minimal
 zypper install -y $packages
-
-# apt-get clean
+zypper clean --all
 
 # rm -rf /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* /usr/share/lintian/* /usr/share/linda/*
 
