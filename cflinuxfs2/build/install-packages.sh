@@ -33,7 +33,7 @@ zypper-aptitude
 autoconf
 bind-utils
 bison
-# build-essential ?
+patterns-openSUSE-devel_basis
 bzr
 ca-certificates
 cmake
@@ -48,7 +48,7 @@ fontconfig
 gdb
 git-core
 # gnupg-curl ?
-# gsfonts ?
+ghostscript-fonts
 ImageMagick
 # iputils-arping ? iputils
 # krb5-user ?
@@ -63,9 +63,9 @@ libavahi-client3
 libavahi-common3
 libbz2-devel
 libcairo2
-# libcap2-bin ?
+libcap-progs
 perl-Class-Accessor
-# libcups2 ?
+cups-libs
 libcurl4
 libcurl-devel
 # libcwidget3 ?

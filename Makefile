@@ -13,7 +13,7 @@ endif
 
 opensuse42.cid:
 	docker build --no-cache -f $(docker_file) -t splatform/opensuse42 cflinuxfs2
-	docker run --cidfile=opensuse42.cid splatform/opensuse42 zypper search --no-refresh --installed-only --details | \
+	docker run --cidfile=opensuse42.cid splatform/opensuse42 zypper --no-refresh search --installed-only --details | \
 		tee cflinuxfs2/opensuse42_zypper.out
 
 opensuse42.tar: opensuse42.cid
