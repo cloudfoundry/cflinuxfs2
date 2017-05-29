@@ -1,4 +1,4 @@
-Rootfs SHASUM: f1eed1d41904f3c0f5789b846792fa8e559893c5
+Rootfs SHASUM: 199bf1f41d18f3ac693d08080b266967d796a7bc
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -92,8 +92,8 @@ ii  insserv                            1.14.0-5ubuntu2                          
 ii  iproute2                           3.12.0-2ubuntu1                            amd64        networking and traffic control tools
 ii  iputils-arping                     3:20121221-4ubuntu1.1                      amd64        Tool to send ICMP echo requests to an ARP address
 ii  iputils-ping                       3:20121221-4ubuntu1.1                      amd64        Tools to test the reachability of network hosts
-ii  isc-dhcp-client                    4.2.4-7ubuntu12.8                          amd64        ISC DHCP client
-ii  isc-dhcp-common                    4.2.4-7ubuntu12.8                          amd64        common files used by all the isc-dhcp* packages
+ii  isc-dhcp-client                    4.2.4-7ubuntu12.9                          amd64        ISC DHCP client
+ii  isc-dhcp-common                    4.2.4-7ubuntu12.9                          amd64        common files used by all the isc-dhcp* packages
 ii  jq                                 1.3-1.1ubuntu1                             amd64        lightweight and flexible command-line JSON processor
 ii  kbd                                1.15.5-1ubuntu1                            amd64        Linux console font and keytable utilities
 ii  keyboard-configuration             1.70ubuntu8                                all          system-wide keyboard preferences
