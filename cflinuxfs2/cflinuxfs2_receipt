@@ -1,4 +1,4 @@
-Rootfs SHASUM: 2ed8fb256d649048d3a7bd37a58ee8f5c9589cd2
+Rootfs SHASUM: 79fcfa6cd06fea2fc9a60ec842458113dc0455a5
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -92,8 +92,8 @@ ii  insserv                            1.14.0-5ubuntu2                          
 ii  iproute2                           3.12.0-2ubuntu1                            amd64        networking and traffic control tools
 ii  iputils-arping                     3:20121221-4ubuntu1.1                      amd64        Tool to send ICMP echo requests to an ARP address
 ii  iputils-ping                       3:20121221-4ubuntu1.1                      amd64        Tools to test the reachability of network hosts
-ii  isc-dhcp-client                    4.2.4-7ubuntu12.9                          amd64        ISC DHCP client
-ii  isc-dhcp-common                    4.2.4-7ubuntu12.9                          amd64        common files used by all the isc-dhcp* packages
+ii  isc-dhcp-client                    4.2.4-7ubuntu12.10                         amd64        ISC DHCP client
+ii  isc-dhcp-common                    4.2.4-7ubuntu12.10                         amd64        common files used by all the isc-dhcp* packages
 ii  jq                                 1.3-1.1ubuntu1                             amd64        lightweight and flexible command-line JSON processor
 ii  kbd                                1.15.5-1ubuntu1                            amd64        Linux console font and keytable utilities
 ii  keyboard-configuration             1.70ubuntu8                                all          system-wide keyboard preferences
@@ -288,8 +288,8 @@ ii  liblapack-dev                      3.5.0-2ubuntu1                           
 ii  liblapack3                         3.5.0-2ubuntu1                             amd64        Library of linear algebra routines 3 - shared version
 ii  liblcms2-2:amd64                   2.5-0ubuntu4.1                             amd64        Little CMS 2 color management library
 ii  liblcms2-dev:amd64                 2.5-0ubuntu4.1                             amd64        Little CMS 2 color management library development headers
-ii  libldap-2.4-2:amd64                2.4.31-1+nmu2ubuntu8.3                     amd64        OpenLDAP libraries
-ii  libldap2-dev:amd64                 2.4.31-1+nmu2ubuntu8.3                     amd64        OpenLDAP development libraries
+ii  libldap-2.4-2:amd64                2.4.31-1+nmu2ubuntu8.4                     amd64        OpenLDAP libraries
+ii  libldap2-dev:amd64                 2.4.31-1+nmu2ubuntu8.4                     amd64        OpenLDAP development libraries
 ii  liblocale-gettext-perl             1.05-7build3                               amd64        module using libc functions for internationalization in Perl
 ii  liblockfile-bin                    1.09-6ubuntu1                              amd64        support binaries for and cli utilities based on liblockfile
 ii  liblockfile1:amd64                 1.09-6ubuntu1                              amd64        NFS-safe locking library
@@ -361,8 +361,8 @@ ii  libpng12-0:amd64                   1.2.50-1ubuntu2.14.04.2                  
 ii  libpng12-dev                       1.2.50-1ubuntu2.14.04.2                    amd64        PNG library - development
 ii  libpod-latex-perl                  0.61-1                                     all          module to convert Pod data to formatted LaTeX
 ii  libpopt0:amd64                     1.16-8ubuntu1                              amd64        lib for parsing cmdline parameters
-ii  libpq-dev                          9.3.16-0ubuntu0.14.04                      amd64        header files for libpq5 (PostgreSQL library)
-ii  libpq5                             9.3.16-0ubuntu0.14.04                      amd64        PostgreSQL C client library
+ii  libpq-dev                          9.3.17-0ubuntu0.14.04                      amd64        header files for libpq5 (PostgreSQL library)
+ii  libpq5                             9.3.17-0ubuntu0.14.04                      amd64        PostgreSQL C client library
 ii  libprocps3:amd64                   1:3.3.9-1ubuntu2.2                         amd64        library for accessing process information from /proc
 ii  libpthread-stubs0-dev:amd64        0.3-4                                      amd64        pthread stubs not provided by native libc, development files
 ii  libpython-stdlib:amd64             2.7.5-5ubuntu3                             amd64        interactive high-level object-oriented language (default python version)
