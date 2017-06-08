@@ -16,4 +16,7 @@ RUN mkdir /home/vcap/app
 RUN chown vcap /home/vcap/app
 RUN ln -s /home/vcap/app /app
 
+# /app must exist so we can bind-mount it to /home/vcap in seed
+RUN mkdir /app
+
 RUN rm -rf /tmp/*
