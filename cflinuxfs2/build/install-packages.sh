@@ -47,6 +47,7 @@ laptop-detect
 less
 libaio1
 libatk1.0-0
+libatlas-base-dev
 libatm1
 libavahi-client3
 libavahi-common-data
