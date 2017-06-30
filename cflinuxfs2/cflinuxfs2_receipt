@@ -1,4 +1,4 @@
-Rootfs SHASUM: 50875387eadf207df79d86b9249690b3bf4dc0a6
+Rootfs SHASUM: 4116941dc8f7b6f28588b0c97df8dfb0403e8700
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -14,7 +14,7 @@ ii  autoconf                           2.69-6                                   
 ii  base-files                         7.2ubuntu5.5                               amd64        Debian base system miscellaneous files
 ii  base-passwd                        3.5.33                                     amd64        Debian base system master password and group files
 ii  bash                               4.3-7ubuntu1.7                             amd64        GNU Bourne Again SHell
-ii  bind9-host                         1:9.9.5.dfsg-3ubuntu0.14                   amd64        Version of 'host' bundled with BIND 9.X
+ii  bind9-host                         1:9.9.5.dfsg-3ubuntu0.15                   amd64        Version of 'host' bundled with BIND 9.X
 ii  binutils                           2.24-5ubuntu14.2                           amd64        GNU assembler, linker and binary utilities
 ii  bison                              2:3.0.2.dfsg-2                             amd64        YACC-compatible parser generator
 ii  bsdutils                           1:2.20.1-5.1ubuntu20.9                     amd64        Basic utilities from 4.4BSD-Lite
@@ -43,7 +43,7 @@ ii  dh-python                          1.20140128-1ubuntu8.2                    
 ii  diffutils                          1:3.3-1                                    amd64        File comparison utilities
 ii  dmidecode                          2.12-2                                     amd64        SMBIOS/DMI table decoder
 ii  dmsetup                            2:1.02.77-6ubuntu2                         amd64        Linux Kernel Device Mapper userspace library
-ii  dnsutils                           1:9.9.5.dfsg-3ubuntu0.14                   amd64        Clients provided with BIND
+ii  dnsutils                           1:9.9.5.dfsg-3ubuntu0.15                   amd64        Clients provided with BIND
 ii  dpkg                               1.17.5ubuntu5.7                            amd64        Debian package management system
 ii  dpkg-dev                           1.17.5ubuntu5.7                            all          Debian package development tools
 ii  e2fslibs:amd64                     1.42.9-3ubuntu1.3                          amd64        ext2/ext3/ext4 file system libraries
@@ -97,7 +97,7 @@ ii  isc-dhcp-common                    4.2.4-7ubuntu12.10                       
 ii  jq                                 1.3-1.1ubuntu1                             amd64        lightweight and flexible command-line JSON processor
 ii  kbd                                1.15.5-1ubuntu1                            amd64        Linux console font and keytable utilities
 ii  keyboard-configuration             1.70ubuntu8                                all          system-wide keyboard preferences
-ii  klibc-utils                        2.0.3-0ubuntu1.14.04.2                     amd64        small utilities built with klibc for early boot
+ii  klibc-utils                        2.0.3-0ubuntu1.14.04.3                     amd64        small utilities built with klibc for early boot
 ii  kmod                               15-0ubuntu6                                amd64        tools for managing Linux kernel modules
 ii  krb5-config                        2.3                                        all          Configuration files for Kerberos Version 5
 ii  krb5-multidev                      1.12+dfsg-2ubuntu5.3                       amd64        Development files for MIT Kerberos without Heimdal conflict
@@ -130,7 +130,7 @@ ii  libavahi-common3:amd64             0.6.31-4ubuntu1.1                        
 ii  libavcodec54:amd64                 6:9.20-0ubuntu0.14.04.1                    amd64        Libav codec library
 ii  libavformat54:amd64                6:9.20-0ubuntu0.14.04.1                    amd64        Libav file format library
 ii  libavutil52:amd64                  6:9.20-0ubuntu0.14.04.1                    amd64        Libav utility library
-ii  libbind9-90                        1:9.9.5.dfsg-3ubuntu0.14                   amd64        BIND9 Shared Library used by BIND
+ii  libbind9-90                        1:9.9.5.dfsg-3ubuntu0.15                   amd64        BIND9 Shared Library used by BIND
 ii  libbison-dev:amd64                 2:3.0.2.dfsg-2                             amd64        YACC-compatible parser generator - development library
 ii  libblas-dev                        1.2.20110419-7                             amd64        Basic Linear Algebra Subroutines 3, static library
 ii  libblas3                           1.2.20110419-7                             amd64        Basic Linear Algebra Reference implementations, shared library
@@ -173,7 +173,7 @@ ii  libdirectfb-1.2-9:amd64            1.2.10.0-5                               
 ii  libdjvulibre-dev:amd64             3.5.25.4-3                                 amd64        Development files for the DjVu image format
 ii  libdjvulibre-text                  3.5.25.4-3                                 all          Linguistic support files for libdjvulibre
 ii  libdjvulibre21:amd64               3.5.25.4-3                                 amd64        Runtime support for the DjVu image format
-ii  libdns100                          1:9.9.5.dfsg-3ubuntu0.14                   amd64        DNS Shared Library used by BIND
+ii  libdns100                          1:9.9.5.dfsg-3ubuntu0.15                   amd64        DNS Shared Library used by BIND
 ii  libdpkg-perl                       1.17.5ubuntu5.7                            all          Dpkg perl modules
 ii  libdrm-intel1:amd64                2.4.67-1ubuntu0.14.04.1                    amd64        Userspace interface to intel-specific kernel DRM services -- runtime
 ii  libdrm-nouveau2:amd64              2.4.67-1ubuntu0.14.04.1                    amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
@@ -256,9 +256,9 @@ ii  libidn11-dev                       1.28-1ubuntu2.1                          
 ii  libilmbase-dev                     1.0.1-6ubuntu1                             amd64        development files for IlmBase
 ii  libilmbase6:amd64                  1.0.1-6ubuntu1                             amd64        several utility libraries from ILM used by OpenEXR
 ii  libio-string-perl                  1.08-3                                     all          Emulate IO::File interface for in-core strings
-ii  libisc95                           1:9.9.5.dfsg-3ubuntu0.14                   amd64        ISC Shared Library used by BIND
-ii  libisccc90                         1:9.9.5.dfsg-3ubuntu0.14                   amd64        Command Channel Library used by BIND
-ii  libisccfg90                        1:9.9.5.dfsg-3ubuntu0.14                   amd64        Config File Handling Library used by BIND
+ii  libisc95                           1:9.9.5.dfsg-3ubuntu0.15                   amd64        ISC Shared Library used by BIND
+ii  libisccc90                         1:9.9.5.dfsg-3ubuntu0.15                   amd64        Command Channel Library used by BIND
+ii  libisccfg90                        1:9.9.5.dfsg-3ubuntu0.15                   amd64        Config File Handling Library used by BIND
 ii  libisl10:amd64                     0.12.2-1                                   amd64        manipulating sets and relations of integer points bounded by linear constraints
 ii  libitm1:amd64                      4.8.4-2ubuntu1~14.04.3                     amd64        GNU Transactional Memory Library
 ii  libjasper-dev                      1.900.1-14ubuntu3.4                        amd64        Development files for the JasPer JPEG-2000 library
@@ -278,7 +278,7 @@ ii  libkadm5clnt-mit9:amd64            1.12+dfsg-2ubuntu5.3                     
 ii  libkadm5srv-mit9:amd64             1.12+dfsg-2ubuntu5.3                       amd64        MIT Kerberos runtime libraries - KDC and Admin Server
 ii  libkdb5-7:amd64                    1.12+dfsg-2ubuntu5.3                       amd64        MIT Kerberos runtime libraries - Kerberos database
 ii  libkeyutils1:amd64                 1.5.6-1                                    amd64        Linux Key Management Utilities (library)
-ii  libklibc                           2.0.3-0ubuntu1.14.04.2                     amd64        minimal libc subset for use with initramfs
+ii  libklibc                           2.0.3-0ubuntu1.14.04.3                     amd64        minimal libc subset for use with initramfs
 ii  libkmod2:amd64                     15-0ubuntu6                                amd64        libkmod shared library
 ii  libkrb5-26-heimdal:amd64           1.6~git20131207+dfsg-1ubuntu1.1            amd64        Heimdal Kerberos - libraries
 ii  libkrb5-3:amd64                    1.12+dfsg-2ubuntu5.3                       amd64        MIT Kerberos runtime libraries
@@ -298,7 +298,7 @@ ii  liblqr-1-0:amd64                   0.4.1-2ubuntu1                           
 ii  liblqr-1-0-dev                     0.4.1-2ubuntu1                             amd64        converts plain array images into multi-size representation (developments files)
 ii  libltdl-dev:amd64                  2.4.2-1.7ubuntu1                           amd64        A system independent dlopen wrapper for GNU libtool
 ii  libltdl7:amd64                     2.4.2-1.7ubuntu1                           amd64        A system independent dlopen wrapper for GNU libtool
-ii  liblwres90                         1:9.9.5.dfsg-3ubuntu0.14                   amd64        Lightweight Resolver Library used by BIND
+ii  liblwres90                         1:9.9.5.dfsg-3ubuntu0.15                   amd64        Lightweight Resolver Library used by BIND
 ii  liblzma-dev:amd64                  5.1.1alpha+20120614-2ubuntu2               amd64        XZ-format compression library - development files
 ii  liblzma5:amd64                     5.1.1alpha+20120614-2ubuntu2               amd64        XZ-format compression library
 ii  liblzo2-2:amd64                    2.06-1.2ubuntu1.1                          amd64        data compression library
@@ -308,8 +308,8 @@ ii  libmagickcore5:amd64               8:6.7.7.10-6ubuntu3.7                    
 ii  libmagickcore5-extra:amd64         8:6.7.7.10-6ubuntu3.7                      amd64        low-level image manipulation library - extra codecs
 ii  libmagickwand-dev                  8:6.7.7.10-6ubuntu3.7                      amd64        image manipulation library - development files
 ii  libmagickwand5:amd64               8:6.7.7.10-6ubuntu3.7                      amd64        image manipulation library
-ii  libmariadbclient-dev               5.5.54-1ubuntu0.14.04.1                    amd64        MariaDB database development files
-ii  libmariadbclient18:amd64           5.5.54-1ubuntu0.14.04.1                    amd64        MariaDB database client library
+ii  libmariadbclient-dev               5.5.56-1ubuntu0.14.04.1                    amd64        MariaDB database development files
+ii  libmariadbclient18:amd64           5.5.56-1ubuntu0.14.04.1                    amd64        MariaDB database client library
 ii  libmodule-pluggable-perl           5.1-1                                      all          module for giving  modules the ability to have plugins
 ii  libmount1:amd64                    2.20.1-5.1ubuntu20.9                       amd64        block device id library
 ii  libmp3lame0:amd64                  3.99.5+repack1-3ubuntu1                    amd64        MP3 encoding library
@@ -488,7 +488,7 @@ ii  libxt6:amd64                       1:1.1.4-1                                
 ii  libxvidcore4:amd64                 2:1.3.2-9ubuntu1                           amd64        Open source MPEG-4 video codec (library)
 ii  libyaml-0-2:amd64                  0.1.4-3ubuntu3.1                           amd64        Fast YAML 1.1 parser and emitter library
 ii  libyaml-dev:amd64                  0.1.4-3ubuntu3.1                           amd64        Fast YAML 1.1 parser and emitter library (development)
-ii  linux-libc-dev:amd64               3.13.0-121.170                             amd64        Linux Kernel Headers for development
+ii  linux-libc-dev:amd64               3.13.0-123.172                             amd64        Linux Kernel Headers for development
 ii  locales                            2.13+git20120306-12.1                      all          common files for locale support
 ii  lockfile-progs                     0.1.17                                     amd64        Programs for locking and unlocking files and mailboxes
 ii  login                              1:4.1.5.1-1ubuntu9.5                       amd64        system login tools
@@ -502,7 +502,7 @@ ii  make                               3.81-8.2ubuntu3                          
 ii  makedev                            2.3.1-93ubuntu2~ubuntu14.04.1              all          creates device files in /dev
 ii  manpages                           3.54-1ubuntu1                              all          Manual pages about using a GNU/Linux system
 ii  manpages-dev                       3.54-1ubuntu1                              all          Manual pages about using GNU/Linux for development
-ii  mariadb-common                     5.5.54-1ubuntu0.14.04.1                    all          MariaDB common metapackage
+ii  mariadb-common                     5.5.56-1ubuntu0.14.04.1                    all          MariaDB common metapackage
 ii  mawk                               1.3.3-17ubuntu2                            amd64        a pattern scanning and text processing language
 ii  mercurial                          2.8.2-1ubuntu1.3                           amd64        easy-to-use, scalable distributed version control system
 ii  mercurial-common                   2.8.2-1ubuntu1.3                           all          easy-to-use, scalable distributed version control system (common files)
