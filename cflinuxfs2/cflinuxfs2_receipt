@@ -1,4 +1,4 @@
-Rootfs SHASUM: 4116941dc8f7b6f28588b0c97df8dfb0403e8700
+Rootfs SHASUM: 0bb9695115f2865fc8efd2672d8647724e3558f9
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -202,8 +202,8 @@ ii  libfuse-dev                        2.9.2-4ubuntu4.14.04.1                   
 ii  libfuse2:amd64                     2.9.2-4ubuntu4.14.04.1                     amd64        Filesystem in Userspace (library)
 ii  libgcc-4.8-dev:amd64               4.8.4-2ubuntu1~14.04.3                     amd64        GCC support library (development files)
 ii  libgcc1:amd64                      1:4.9.3-0ubuntu4                           amd64        GCC support library
-ii  libgcrypt11:amd64                  1.5.3-2ubuntu4.4                           amd64        LGPL Crypto library - runtime library
-ii  libgcrypt11-dev                    1.5.3-2ubuntu4.4                           amd64        LGPL Crypto library - development files
+ii  libgcrypt11:amd64                  1.5.3-2ubuntu4.5                           amd64        LGPL Crypto library - runtime library
+ii  libgcrypt11-dev                    1.5.3-2ubuntu4.5                           amd64        LGPL Crypto library - development files
 ii  libgd-dev:amd64                    2.1.0-3ubuntu0.6                           amd64        GD Graphics Library (development version)
 ii  libgd2-noxpm-dev                   2.1.0-3ubuntu0.6                           all          GD Graphics Library (transitional package)
 ii  libgd3:amd64                       2.1.0-3ubuntu0.6                           amd64        GD Graphics Library
