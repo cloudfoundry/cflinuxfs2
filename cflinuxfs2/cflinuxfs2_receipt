@@ -1,4 +1,4 @@
-Rootfs SHASUM: 971e90a27fb009d8dd4245cfe5b8693ee59c12a5
+Rootfs SHASUM: d7c406258e0648cdabe9d95dd0660ab4ee4eaece
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -64,7 +64,7 @@ ii  gcc                                4:4.8.2-1ubuntu6                         
 ii  gcc-4.8                            4.8.4-2ubuntu1~14.04.3                     amd64        GNU C compiler
 ii  gcc-4.8-base:amd64                 4.8.4-2ubuntu1~14.04.3                     amd64        GCC, the GNU Compiler Collection (base package)
 ii  gcc-4.9-base:amd64                 4.9.3-0ubuntu4                             amd64        GCC, the GNU Compiler Collection (base package)
-ii  gdb                                7.7.1-0ubuntu5~14.04.2                     amd64        GNU Debugger
+ii  gdb                                7.7.1-0ubuntu5~14.04.3                     amd64        GNU Debugger
 ii  gir1.2-freedesktop                 1.40.0-1ubuntu0.2                          amd64        Introspection data for some FreeDesktop components
 ii  gir1.2-gdkpixbuf-2.0               2.30.7-0ubuntu1.6                          amd64        GDK Pixbuf library - GObject-Introspection
 ii  gir1.2-glib-2.0                    1.40.0-1ubuntu0.2                          amd64        Introspection data for GLib, GObject, Gio and GModule
