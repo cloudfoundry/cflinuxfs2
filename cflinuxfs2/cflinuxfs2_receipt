@@ -1,4 +1,4 @@
-Rootfs SHASUM: 100833dbd760347924c815ec5c33e26c178717d6
+Rootfs SHASUM: 41785b2c70790ada7b302dca7374e8c876338daa
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -517,7 +517,7 @@ ii  ncurses-bin                        5.9+20140118-1ubuntu1                    
 ii  net-tools                          1.60-25ubuntu2.1                           amd64        The NET-3 networking toolkit
 ii  netbase                            5.2                                        all          Basic TCP/IP networking system
 ii  netcat-openbsd                     1.105-7ubuntu1                             amd64        TCP/IP swiss army knife
-ii  ntpdate                            1:4.2.6.p5+dfsg-3ubuntu2.14.04.11          amd64        client for setting system time from NTP servers
+ii  ntpdate                            1:4.2.6.p5+dfsg-3ubuntu2.14.04.12          amd64        client for setting system time from NTP servers
 ii  ocaml-base-nox                     4.01.0-3ubuntu3                            amd64        Runtime system for OCaml bytecode executables (no X)
 ii  openssh-client                     1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) client, for secure access to remote machines
 ii  openssh-server                     1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) server, for secure access from remote machines
