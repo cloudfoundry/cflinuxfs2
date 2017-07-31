@@ -1,4 +1,4 @@
-Rootfs SHASUM: 41785b2c70790ada7b302dca7374e8c876338daa
+Rootfs SHASUM: 4759c30a1915a26a6a87fb17aefa9f5b34ff8b35
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -82,8 +82,8 @@ ii  hicolor-icon-theme                 0.13-1                                   
 ii  hostname                           3.15ubuntu1                                amd64        utility to set/show the host name or domain name
 ii  icu-devtools                       52.1-3ubuntu0.6                            amd64        Development utilities for International Components for Unicode
 ii  ifupdown                           0.7.47.2ubuntu4.4                          amd64        high level tools to configure network interfaces
-ii  imagemagick                        8:6.7.7.10-6ubuntu3.8                      amd64        image manipulation programs
-ii  imagemagick-common                 8:6.7.7.10-6ubuntu3.8                      all          image manipulation programs -- infrastructure
+ii  imagemagick                        8:6.7.7.10-6ubuntu3.9                      amd64        image manipulation programs
+ii  imagemagick-common                 8:6.7.7.10-6ubuntu3.9                      all          image manipulation programs -- infrastructure
 ii  init-system-helpers                1.14ubuntu1                                all          helper tools for all init systems
 ii  initramfs-tools                    0.103ubuntu4.7                             all          tools for generating an initramfs
 ii  initramfs-tools-bin                0.103ubuntu4.7                             amd64        binaries used by initramfs-tools
@@ -303,11 +303,11 @@ ii  liblzma-dev:amd64                  5.1.1alpha+20120614-2ubuntu2             
 ii  liblzma5:amd64                     5.1.1alpha+20120614-2ubuntu2               amd64        XZ-format compression library
 ii  liblzo2-2:amd64                    2.06-1.2ubuntu1.1                          amd64        data compression library
 ii  libmagic1:amd64                    1:5.14-2ubuntu3.3                          amd64        File type determination library using "magic" numbers
-ii  libmagickcore-dev                  8:6.7.7.10-6ubuntu3.8                      amd64        low-level image manipulation library - development files
-ii  libmagickcore5:amd64               8:6.7.7.10-6ubuntu3.8                      amd64        low-level image manipulation library
-ii  libmagickcore5-extra:amd64         8:6.7.7.10-6ubuntu3.8                      amd64        low-level image manipulation library - extra codecs
-ii  libmagickwand-dev                  8:6.7.7.10-6ubuntu3.8                      amd64        image manipulation library - development files
-ii  libmagickwand5:amd64               8:6.7.7.10-6ubuntu3.8                      amd64        image manipulation library
+ii  libmagickcore-dev                  8:6.7.7.10-6ubuntu3.9                      amd64        low-level image manipulation library - development files
+ii  libmagickcore5:amd64               8:6.7.7.10-6ubuntu3.9                      amd64        low-level image manipulation library
+ii  libmagickcore5-extra:amd64         8:6.7.7.10-6ubuntu3.9                      amd64        low-level image manipulation library - extra codecs
+ii  libmagickwand-dev                  8:6.7.7.10-6ubuntu3.9                      amd64        image manipulation library - development files
+ii  libmagickwand5:amd64               8:6.7.7.10-6ubuntu3.9                      amd64        image manipulation library
 ii  libmariadbclient-dev               5.5.56-1ubuntu0.14.04.1                    amd64        MariaDB database development files
 ii  libmariadbclient18:amd64           5.5.56-1ubuntu0.14.04.1                    amd64        MariaDB database client library
 ii  libmodule-pluggable-perl           5.1-1                                      all          module for giving  modules the ability to have plugins
