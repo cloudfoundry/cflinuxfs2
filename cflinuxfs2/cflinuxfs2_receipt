@@ -1,4 +1,4 @@
-Rootfs SHASUM: 647d295f36e2d23fb3573c6e0f24ca8d4fa26ffe
+Rootfs SHASUM: 45c85b6d043e60e77232187ccb0ba88083d7c7e6
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -229,7 +229,7 @@ ii  libgomp1:amd64                     4.8.4-2ubuntu1~14.04.3                   
 ii  libgpg-error-dev                   1.12-0.2ubuntu1                            amd64        library for common error values and messages in GnuPG components (development)
 ii  libgpg-error0:amd64                1.12-0.2ubuntu1                            amd64        library for common error values and messages in GnuPG components
 ii  libgpm2:amd64                      1.20.4-6.1                                 amd64        General Purpose Mouse - shared library
-ii  libgraphite2-3:amd64               1.3.6-1ubuntu0.14.04.1                     amd64        Font rendering engine for Complex Scripts -- library
+ii  libgraphite2-3:amd64               1.3.10-0ubuntu0.14.04.1                    amd64        Font rendering engine for Complex Scripts -- library
 ii  libgraphviz-dev                    2.36.0-0ubuntu3.2                          amd64        graphviz libs and headers against which to build applications
 ii  libgsm1:amd64                      1.0.13-4                                   amd64        Shared libraries for GSM speech compressor
 ii  libgssapi-krb5-2:amd64             1.12+dfsg-2ubuntu5.3                       amd64        MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
