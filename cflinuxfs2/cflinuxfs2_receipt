@@ -1,4 +1,4 @@
-Rootfs SHASUM: 6f4d67c0794561e5a22da64c73b9ffec73d249aa
+Rootfs SHASUM: 647d295f36e2d23fb3573c6e0f24ca8d4fa26ffe
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -492,7 +492,7 @@ ii  linux-libc-dev:amd64               3.13.0-128.177                           
 ii  locales                            2.13+git20120306-12.1                      all          common files for locale support
 ii  lockfile-progs                     0.1.17                                     amd64        Programs for locking and unlocking files and mailboxes
 ii  login                              1:4.1.5.1-1ubuntu9.5                       amd64        system login tools
-ii  logrotate                          3.8.7-1ubuntu1.1                           amd64        Log rotation utility
+ii  logrotate                          3.8.7-1ubuntu1.2                           amd64        Log rotation utility
 ii  lsb-base                           4.1+Debian11ubuntu6.2                      all          Linux Standard Base 4.1 init script functionality
 ii  lsb-release                        4.1+Debian11ubuntu6.2                      all          Linux Standard Base version reporting utility
 ii  lsof                               4.86+dfsg-1ubuntu2                         amd64        Utility to list open files
