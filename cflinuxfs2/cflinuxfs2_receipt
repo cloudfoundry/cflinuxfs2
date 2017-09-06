@@ -1,4 +1,4 @@
-Rootfs SHASUM: e52fcf6b41274c23954aafe6697e14229b06d68c
+Rootfs SHASUM: c07df702760445399d720ba27c772cdadedc3582
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -21,7 +21,7 @@ ii  bsdutils                           1:2.20.1-5.1ubuntu20.9                   
 ii  build-essential                    11.6ubuntu6                                amd64        Informational list of build-essential packages
 ii  busybox-initramfs                  1:1.21.0-1ubuntu1                          amd64        Standalone shell setup for initramfs
 ii  bzip2                              1.0.6-5                                    amd64        high-quality block-sorting file compressor - utilities
-ii  bzr                                2.6.0+bzr6593-1ubuntu1.5                   all          easy to use distributed version control system
+ii  bzr                                2.6.0+bzr6593-1ubuntu1.6                   all          easy to use distributed version control system
 ii  ca-certificates                    20160104ubuntu0.14.04.1                    all          Common CA certificates
 ii  cmake                              2.8.12.2-0ubuntu3                          amd64        cross-platform, open-source make system
 ii  cmake-data                         2.8.12.2-0ubuntu3                          all          CMake data files (modules, templates and documentation)
@@ -533,7 +533,7 @@ ii  plymouth                           0.8.8-0ubuntu17.1                        
 ii  procps                             1:3.3.9-1ubuntu2.2                         amd64        /proc file system utilities
 ii  psmisc                             22.20-1ubuntu2                             amd64        utilities that use the proc file system
 ii  python                             2.7.5-5ubuntu3                             amd64        interactive high-level object-oriented language (default version)
-ii  python-bzrlib                      2.6.0+bzr6593-1ubuntu1.5                   amd64        distributed version control system - python library
+ii  python-bzrlib                      2.6.0+bzr6593-1ubuntu1.6                   amd64        distributed version control system - python library
 ii  python-configobj                   4.7.2+ds-5build1                           all          simple but powerful config file reader and writer for Python
 ii  python-minimal                     2.7.5-5ubuntu3                             amd64        minimal subset of the Python language (default version)
 ii  python2.7                          2.7.6-8ubuntu0.3                           amd64        Interactive high-level object-oriented language (version 2.7)
