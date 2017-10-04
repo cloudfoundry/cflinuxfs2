@@ -1,4 +1,4 @@
-Rootfs SHASUM: 9fdb32f56060d56818ec44d13c600029eca2dc30
+Rootfs SHASUM: 1504fb0385c9833c07a4089d72b08ac12a84b80a
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -22,7 +22,7 @@ ii  build-essential                    11.6ubuntu6                              
 ii  busybox-initramfs                  1:1.21.0-1ubuntu1                          amd64        Standalone shell setup for initramfs
 ii  bzip2                              1.0.6-5                                    amd64        high-quality block-sorting file compressor - utilities
 ii  bzr                                2.6.0+bzr6593-1ubuntu1.6                   all          easy to use distributed version control system
-ii  ca-certificates                    20160104ubuntu0.14.04.1                    all          Common CA certificates
+ii  ca-certificates                    20170717~14.04.1                           all          Common CA certificates
 ii  cmake                              2.8.12.2-0ubuntu3                          amd64        cross-platform, open-source make system
 ii  cmake-data                         2.8.12.2-0ubuntu3                          all          CMake data files (modules, templates and documentation)
 ii  comerr-dev                         2.1-1.42.9-3ubuntu1.3                      amd64        common error description library - headers and static libraries
@@ -251,8 +251,8 @@ ii  libice-dev:amd64                   2:1.0.8-2                                
 ii  libice6:amd64                      2:1.0.8-2                                  amd64        X11 Inter-Client Exchange library
 ii  libicu-dev:amd64                   52.1-3ubuntu0.6                            amd64        Development files for International Components for Unicode
 ii  libicu52:amd64                     52.1-3ubuntu0.6                            amd64        International Components for Unicode
-ii  libidn11:amd64                     1.28-1ubuntu2.1                            amd64        GNU Libidn library, implementation of IETF IDN specifications
-ii  libidn11-dev                       1.28-1ubuntu2.1                            amd64        Development files for GNU Libidn, an IDN library
+ii  libidn11:amd64                     1.28-1ubuntu2.2                            amd64        GNU Libidn library, implementation of IETF IDN specifications
+ii  libidn11-dev                       1.28-1ubuntu2.2                            amd64        Development files for GNU Libidn, an IDN library
 ii  libilmbase-dev                     1.0.1-6ubuntu1                             amd64        development files for IlmBase
 ii  libilmbase6:amd64                  1.0.1-6ubuntu1                             amd64        several utility libraries from ILM used by OpenEXR
 ii  libio-string-perl                  1.08-3                                     all          Emulate IO::File interface for in-core strings
@@ -518,7 +518,7 @@ ii  net-tools                          1.60-25ubuntu2.1                         
 ii  netbase                            5.2                                        all          Basic TCP/IP networking system
 ii  netcat-openbsd                     1.105-7ubuntu1                             amd64        TCP/IP swiss army knife
 ii  ntpdate                            1:4.2.6.p5+dfsg-3ubuntu2.14.04.12          amd64        client for setting system time from NTP servers
-ii  ocaml-base-nox                     4.01.0-3ubuntu3                            amd64        Runtime system for OCaml bytecode executables (no X)
+ii  ocaml-base-nox                     4.01.0-3ubuntu3.1                          amd64        Runtime system for OCaml bytecode executables (no X)
 ii  openssh-client                     1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) client, for secure access to remote machines
 ii  openssh-server                     1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) server, for secure access from remote machines
 ii  openssh-sftp-server                1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
