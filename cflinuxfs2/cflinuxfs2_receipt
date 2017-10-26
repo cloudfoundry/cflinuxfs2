@@ -1,4 +1,4 @@
-Rootfs SHASUM: 2ac766ad55d41929157351f47581e667f3580751
+Rootfs SHASUM: 20ac070ece44d3f8906ce809500948f331f227ff
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -576,7 +576,7 @@ ii  util-linux                         2.20.1-5.1ubuntu20.9                     
 ii  uuid-dev                           2.20.1-5.1ubuntu20.9                       amd64        universally unique id library - headers and static libraries
 ii  vim-common                         2:7.4.052-1ubuntu3.1                       amd64        Vi IMproved - Common files
 ii  vim-tiny                           2:7.4.052-1ubuntu3.1                       amd64        Vi IMproved - enhanced vi editor - compact version
-ii  wget                               1.15-1ubuntu1.14.04.2                      amd64        retrieves files from the web
+ii  wget                               1.15-1ubuntu1.14.04.3                      amd64        retrieves files from the web
 ii  whiptail                           0.52.15-2ubuntu5                           amd64        Displays user-friendly dialog boxes from shell scripts
 ii  x11-common                         1:7.7+1ubuntu8.1                           all          X Window System (X.Org) infrastructure
 ii  x11proto-core-dev                  7.0.26-1~ubuntu2                           all          X11 core wire protocol and auxiliary headers
