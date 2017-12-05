@@ -1,4 +1,4 @@
-Rootfs SHASUM: 8c9750f68aafbb6a42b923d861d2ab183bc07fbc
+Rootfs SHASUM: f214cf47d91f848432910184fd90d7bdec127bc4
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -474,8 +474,8 @@ ii  libxft2:amd64                      2.3.1-2                                  
 ii  libxi6:amd64                       2:1.7.1.901-1ubuntu1.1                     amd64        X11 Input extension library
 ii  libxinerama1:amd64                 2:1.1.3-1                                  amd64        X11 Xinerama extension library
 ii  libxkbcommon0:amd64                0.4.1-0ubuntu1                             amd64        library interface to the XKB compiler - shared library
-ii  libxml2:amd64                      2.9.1+dfsg1-3ubuntu4.10                    amd64        GNOME XML library
-ii  libxml2-dev:amd64                  2.9.1+dfsg1-3ubuntu4.10                    amd64        Development files for the GNOME XML library
+ii  libxml2:amd64                      2.9.1+dfsg1-3ubuntu4.11                    amd64        GNOME XML library
+ii  libxml2-dev:amd64                  2.9.1+dfsg1-3ubuntu4.11                    amd64        Development files for the GNOME XML library
 ii  libxpm-dev:amd64                   1:3.5.10-1ubuntu0.1                        amd64        X11 pixmap library (development headers)
 ii  libxpm4:amd64                      1:3.5.10-1ubuntu0.1                        amd64        X11 pixmap library
 ii  libxrandr2:amd64                   2:1.5.0-1~trusty1                          amd64        X11 RandR extension library
