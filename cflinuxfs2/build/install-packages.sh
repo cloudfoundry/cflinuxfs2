@@ -6,18 +6,6 @@ set -e -x
 #   apt-get -y --force-yes --no-install-recommends "$@"
 # }
 
-# function install_mysql_so_files() {
-#     mysqlpath="/usr/lib/x86_64-linux-gnu"
-#     if [ "`uname -m`" == "ppc64le" ]; then
-#         mysqlpath="/usr/lib/powerpc64le-linux-gnu"
-#     fi
-#     apt_get install libmysqlclient-dev
-#     tmp=`mktemp -d`
-#     mv $mysqlpath/libmysqlclient* $tmp
-#     apt_get remove libmysqlclient-dev libmysqlclient18
-#     mv $tmp/* $mysqlpath/
-# }
-
 packages="
 # Additional packages needed on openSUSE
 tar
@@ -93,7 +81,7 @@ perl-IO-String
 lapack-devel
 # libmagickcore-dev ?
 # libmagickwand-dev ?
-# libmariadbclient-dev ?
+libmysqlclient-devel
 ncurses-devel
 libnl3-200
 openblas-devel
@@ -175,8 +163,6 @@ packages=$(sed '/^#/d' <<< "${packages}")
 # apt_get install gpgv
 # apt_get update
 # apt_get dist-upgrade
-# # TODO: deprecate libmysqlclient
-# install_mysql_so_files
 # apt_get install $packages ubuntu-minimal
 zypper install -y $packages
 zypper clean --all
