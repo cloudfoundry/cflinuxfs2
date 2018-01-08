@@ -1,4 +1,4 @@
-Rootfs SHASUM: 70256540eb9730e146ebe4e6d7ca21394e71935b
+Rootfs SHASUM: 93144a4804b7935ea6afa751928645ca34e5106b
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -85,8 +85,8 @@ ii  ifupdown                           0.7.47.2ubuntu4.4                        
 ii  imagemagick                        8:6.7.7.10-6ubuntu3.9                      amd64        image manipulation programs
 ii  imagemagick-common                 8:6.7.7.10-6ubuntu3.9                      all          image manipulation programs -- infrastructure
 ii  init-system-helpers                1.14ubuntu1                                all          helper tools for all init systems
-ii  initramfs-tools                    0.103ubuntu4.9                             all          tools for generating an initramfs
-ii  initramfs-tools-bin                0.103ubuntu4.9                             amd64        binaries used by initramfs-tools
+ii  initramfs-tools                    0.103ubuntu4.10                            all          tools for generating an initramfs
+ii  initramfs-tools-bin                0.103ubuntu4.10                            amd64        binaries used by initramfs-tools
 ii  initscripts                        2.88dsf-41ubuntu6.3                        amd64        scripts for initializing and shutting down the system
 ii  insserv                            1.14.0-5ubuntu2                            amd64        boot sequence organizer using LSB init.d script dependency information
 ii  iproute2                           3.12.0-2ubuntu1.1                          amd64        networking and traffic control tools
