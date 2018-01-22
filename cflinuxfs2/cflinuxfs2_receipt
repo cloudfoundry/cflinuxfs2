@@ -1,4 +1,4 @@
-Rootfs SHASUM: ecc63244444511ac202ca6eb4668b5ffeae09e2a
+Rootfs SHASUM: 63c2ac0644c69d79acec60cf7eca08ac3688cff1
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -316,7 +316,7 @@ ii  libmp3lame0:amd64                  3.99.5+repack1-3ubuntu1                  
 ii  libmpc3:amd64                      1.0.1-1ubuntu1                             amd64        multiple precision complex floating-point library
 ii  libmpdec2:amd64                    2.4.0-6                                    amd64        library for decimal floating point arithmetic (runtime library)
 ii  libmpfr4:amd64                     3.1.2-1                                    amd64        multiple precision floating-point computation
-rc  libmysqlclient18:amd64             5.5.58-0ubuntu0.14.04.1                    amd64        MySQL database client library
+rc  libmysqlclient18:amd64             5.5.59-0ubuntu0.14.04.1                    amd64        MySQL database client library
 ii  libncurses5:amd64                  5.9+20140118-1ubuntu1                      amd64        shared libraries for terminal handling
 ii  libncurses5-dev:amd64              5.9+20140118-1ubuntu1                      amd64        developer's libraries for ncurses
 ii  libncursesw5:amd64                 5.9+20140118-1ubuntu1                      amd64        shared libraries for terminal handling (wide character support)
@@ -511,7 +511,7 @@ ii  module-init-tools                  15-0ubuntu6                              
 ii  mount                              2.20.1-5.1ubuntu20.9                       amd64        Tools for mounting and manipulating filesystems
 ii  mountall                           2.53                                       amd64        filesystem mounting tool
 ii  multiarch-support                  2.19-0ubuntu6.14                           amd64        Transitional package to ensure multiarch compatibility
-ii  mysql-common                       5.5.58-0ubuntu0.14.04.1                    all          MySQL database common files, e.g. /etc/mysql/my.cnf
+ii  mysql-common                       5.5.59-0ubuntu0.14.04.1                    all          MySQL database common files, e.g. /etc/mysql/my.cnf
 ii  ncurses-base                       5.9+20140118-1ubuntu1                      all          basic terminal type definitions
 ii  ncurses-bin                        5.9+20140118-1ubuntu1                      amd64        terminal-related programs and man pages
 ii  net-tools                          1.60-25ubuntu2.1                           amd64        The NET-3 networking toolkit
@@ -519,9 +519,9 @@ ii  netbase                            5.2                                      
 ii  netcat-openbsd                     1.105-7ubuntu1                             amd64        TCP/IP swiss army knife
 ii  ntpdate                            1:4.2.6.p5+dfsg-3ubuntu2.14.04.12          amd64        client for setting system time from NTP servers
 ii  ocaml-base-nox                     4.01.0-3ubuntu3.1                          amd64        Runtime system for OCaml bytecode executables (no X)
-ii  openssh-client                     1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) client, for secure access to remote machines
-ii  openssh-server                     1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) server, for secure access from remote machines
-ii  openssh-sftp-server                1:6.6p1-2ubuntu2.8                         amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
+ii  openssh-client                     1:6.6p1-2ubuntu2.10                        amd64        secure shell (SSH) client, for secure access to remote machines
+ii  openssh-server                     1:6.6p1-2ubuntu2.10                        amd64        secure shell (SSH) server, for secure access from remote machines
+ii  openssh-sftp-server                1:6.6p1-2ubuntu2.10                        amd64        secure shell (SSH) sftp server module, for SFTP access from remote machines
 ii  openssl                            1.0.1f-1ubuntu2.23                         amd64        Secure Sockets Layer toolkit - cryptographic utility
 ii  passwd                             1:4.1.5.1-1ubuntu9.5                       amd64        change and administer password and group data
 ii  patch                              2.7.1-4ubuntu2.3                           amd64        Apply a diff file to an original
