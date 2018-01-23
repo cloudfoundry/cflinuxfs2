@@ -1,4 +1,4 @@
-Rootfs SHASUM: 8e2d4ae7296d85c74ad4f4412eeadb01d14f73f5
+Rootfs SHASUM: 6fae5ce580035fcbc56b44b2c9f4e7d55336e75e
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -545,7 +545,7 @@ ii  python3.4-minimal                  3.4.3-1ubuntu1~14.04.6                   
 ii  quota                              4.01-3                                     amd64        disk quota management tools
 ii  readline-common                    6.3-4ubuntu2                               all          GNU readline and history libraries, common files
 ii  resolvconf                         1.69ubuntu1.3                              all          name server information handler
-ii  rsync                              3.1.0-2ubuntu0.3                           amd64        fast, versatile, remote (and local) file-copying tool
+ii  rsync                              3.1.0-2ubuntu0.4                           amd64        fast, versatile, remote (and local) file-copying tool
 ii  rsyslog                            7.4.4-1ubuntu2.7                           amd64        reliable system and kernel logging daemon
 ii  sed                                4.2.2-4ubuntu1                             amd64        The GNU sed stream editor
 ii  sensible-utils                     0.0.9                                      all          Utilities for sensible alternative selection
