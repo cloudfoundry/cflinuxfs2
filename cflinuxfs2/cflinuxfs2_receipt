@@ -1,4 +1,4 @@
-Rootfs SHASUM: 6fae5ce580035fcbc56b44b2c9f4e7d55336e75e
+Rootfs SHASUM: 636a2b0f9e68f2e76b2a3effff92008fc817b08f
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -414,8 +414,8 @@ ii  libsub-name-perl                   0.05-1build4                             
 ii  libsvn1:amd64                      1.8.8-1ubuntu3.3                           amd64        Shared libraries used by Apache Subversion
 ii  libswscale2:amd64                  6:9.20-0ubuntu0.14.04.1                    amd64        Libav video scaling library
 ii  libsysfs2:amd64                    2.1.0+repack-3ubuntu1                      amd64        interface library to sysfs
-ii  libtasn1-6:amd64                   3.4-3ubuntu0.5                             amd64        Manage ASN.1 structures (runtime)
-ii  libtasn1-6-dev                     3.4-3ubuntu0.5                             amd64        Manage ASN.1 structures (development)
+ii  libtasn1-6:amd64                   3.4-3ubuntu0.6                             amd64        Manage ASN.1 structures (runtime)
+ii  libtasn1-6-dev                     3.4-3ubuntu0.6                             amd64        Manage ASN.1 structures (development)
 ii  libterm-ui-perl                    0.42-1                                     all          Term::ReadLine UI made easy
 ii  libtext-charwidth-perl             0.04-7build3                               amd64        get display widths of characters on the terminal
 ii  libtext-iconv-perl                 1.7-5build2                                amd64        converts between character sets in Perl
