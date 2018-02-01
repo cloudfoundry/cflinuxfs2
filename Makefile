@@ -1,14 +1,20 @@
 all: cflinuxfs2.tar.gz
 
+docker_image := "ubuntu:trusty"
+docker_file := cflinuxfs2/Dockerfile
+
 arch:=$(shell uname -m)
 ifeq ("$(arch)","ppc64le")
         docker_image := "ppc64le/ubuntu:trusty"
         docker_file := cflinuxfs2/Dockerfile.$(arch)
         $(shell cp cflinuxfs2/Dockerfile $(docker_file))
         $(shell sed -i 's/FROM ubuntu:trusty/FROM ppc64le\/ubuntu:trusty/g' $(docker_file))
-else
-        docker_image := "ubuntu:trusty"
-        docker_file := cflinuxfs2/Dockerfile
+endif
+ifeq ("$(arch)","armv7l")
+        docker_image := "armv7/armhf-ubuntu_core:14.04"
+        docker_file := cflinuxfs2/Dockerfile.$(arch)
+        $(shell cp cflinuxfs2/Dockerfile $(docker_file))
+        $(shell sed -i 's/FROM ubuntu:trusty/FROM armv7\/armhf-ubuntu_core:14.04/g' $(docker_file))
 endif
 
 cflinuxfs2.cid: 
