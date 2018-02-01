@@ -11,12 +11,20 @@ function install_mysql_so_files() {
     if [ "`uname -m`" == "ppc64le" ]; then
         mysqlpath="/usr/lib/powerpc64le-linux-gnu"
     fi
+    if [ "`uname -m`" == "armv7l" ]; then
+        mysqlpath="/usr/lib/arm-linux-gnueabihf"
+    fi
     apt_get install libmysqlclient-dev
     tmp=`mktemp -d`
     mv $mysqlpath/libmysqlclient* $tmp
     apt_get remove libmysqlclient-dev libmysqlclient18
     mv $tmp/* $mysqlpath/
 }
+
+arch="amd64"
+if [ "`uname -m`" == "armv7l" ]; then
+    arch="armhf"
+fi
 
 packages="
 aptitude
@@ -44,14 +52,14 @@ laptop-detect
 libaio1
 libatm1
 libavcodec54
-libboost-iostreams1.54.0:amd64
+libboost-iostreams1.54.0:"$arch"
 libcurl4-openssl-dev
 libcwidget3
 libdirectfb-1.2-9
 libdrm-intel1
 libdrm-nouveau2
 libdrm-radeon1
-libept1.4.12:amd64
+libept1.4.12:"$arch"
 libfuse-dev
 libgd2-noxpm-dev
 libgmp-dev
@@ -70,7 +78,7 @@ libreadline6-dev
 libsasl2-dev
 libsasl2-modules
 libselinux1-dev
-libsigc++-2.0-0c2a:amd64
+libsigc++-2.0-0c2a:"$arch"
 libsqlite0-dev
 libsqlite3-dev
 libsysfs2
@@ -101,7 +109,8 @@ uuid-dev
 wget
 zip
 "
-if [ "`uname -m`" == "ppc64le" ]; then
+
+if [ "`uname -m`" == "ppc64le" ] || [ "`uname -m`" == "armv7l" ]; then
 packages=$(sed '/\b\(libopenblas-dev\|libdrm-intel1\|dmidecode\)\b/d' <<< "${packages}")
 ubuntu_url="http://ports.ubuntu.com/ubuntu-ports"
 else
