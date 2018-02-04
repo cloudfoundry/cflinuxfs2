@@ -1,4 +1,4 @@
-FROM armv7/armhf-ubuntu_core:14.04
+FROM ubuntu:trusty
 
 ADD build /tmp/build
 ADD assets /tmp/assets

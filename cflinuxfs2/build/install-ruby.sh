@@ -6,10 +6,12 @@ if [ -z "$RUBY_VERSION" ]; then
     echo "usage: ${0} [VERSION]."
     exit 1
 fi
+OPTS=""
 if [ "`uname -m`" == "ppc64le" ]; then
     OPTS="--build=powerpc64le-linux-gnu"
-else
-    OPTS=""
+fi
+if [ "`uname -m`" == "armv7l" ]; then
+    OPTS="--build=arm-linux-gnueabihf"
 fi
 
 git clone git://github.com/sstephenson/ruby-build.git /tmp/ruby-build
