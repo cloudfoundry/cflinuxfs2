@@ -18,7 +18,7 @@ ifeq ("$(arch)","armv7l")
 endif
 
 cflinuxfs2.cid: 
-	docker build  -f $(docker_file) -t cloudfoundry/cflinuxfs2 cflinuxfs2
+	docker build --no-cache -f $(docker_file) -t cloudfoundry/cflinuxfs2 cflinuxfs2
 	docker run --cidfile=cflinuxfs2.cid cloudfoundry/cflinuxfs2 dpkg -l | tee cflinuxfs2/cflinuxfs2_dpkg_l.out
 
 cflinuxfs2.tar: cflinuxfs2.cid
