@@ -1,4 +1,4 @@
-Rootfs SHASUM: 636bc4042d23cdb21daa8b8ea1f6b7d83b5e0e15
+Rootfs SHASUM: 0b14644c244f7adbcefb55f604128e24c28ff549
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -32,7 +32,7 @@ ii  cpio                               2.11+dfsg-1ubuntu1.2                     
 ii  cpp                                4:4.8.2-1ubuntu6                           amd64        GNU C preprocessor (cpp)
 ii  cpp-4.8                            4.8.4-2ubuntu1~14.04.4                     amd64        GNU C preprocessor
 ii  cron                               3.0pl1-124ubuntu2                          amd64        process scheduling daemon
-ii  curl                               7.35.0-1ubuntu2.14                         amd64        command line tool for transferring data with URL syntax
+ii  curl                               7.35.0-1ubuntu2.15                         amd64        command line tool for transferring data with URL syntax
 ii  dash                               0.5.7-4ubuntu1                             amd64        POSIX-compliant shell
 ii  dconf-gsettings-backend:amd64      0.20.0-1                                   amd64        simple configuration storage system - GSettings back-end
 ii  dconf-service                      0.20.0-1                                   amd64        simple configuration storage system - D-Bus service
@@ -44,8 +44,8 @@ ii  diffutils                          1:3.3-1                                  
 ii  dmidecode                          2.12-2                                     amd64        SMBIOS/DMI table decoder
 ii  dmsetup                            2:1.02.77-6ubuntu2                         amd64        Linux Kernel Device Mapper userspace library
 ii  dnsutils                           1:9.9.5.dfsg-3ubuntu0.17                   amd64        Clients provided with BIND
-ii  dpkg                               1.17.5ubuntu5.7                            amd64        Debian package management system
-ii  dpkg-dev                           1.17.5ubuntu5.7                            all          Debian package development tools
+ii  dpkg                               1.17.5ubuntu5.8                            amd64        Debian package management system
+ii  dpkg-dev                           1.17.5ubuntu5.8                            all          Debian package development tools
 ii  e2fslibs:amd64                     1.42.9-3ubuntu1.3                          amd64        ext2/ext3/ext4 file system libraries
 ii  e2fsprogs                          1.42.9-3ubuntu1.3                          amd64        ext2/ext3/ext4 file system utilities
 ii  eject                              2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1 amd64        ejects CDs and operates CD-Changers under Linux
@@ -92,8 +92,8 @@ ii  insserv                            1.14.0-5ubuntu2                          
 ii  iproute2                           3.12.0-2ubuntu1.2                          amd64        networking and traffic control tools
 ii  iputils-arping                     3:20121221-4ubuntu1.1                      amd64        Tool to send ICMP echo requests to an ARP address
 ii  iputils-ping                       3:20121221-4ubuntu1.1                      amd64        Tools to test the reachability of network hosts
-ii  isc-dhcp-client                    4.2.4-7ubuntu12.12                         amd64        ISC DHCP client
-ii  isc-dhcp-common                    4.2.4-7ubuntu12.12                         amd64        common files used by all the isc-dhcp* packages
+ii  isc-dhcp-client                    4.2.4-7ubuntu12.13                         amd64        ISC DHCP client
+ii  isc-dhcp-common                    4.2.4-7ubuntu12.13                         amd64        common files used by all the isc-dhcp* packages
 ii  jq                                 1.3-1.1ubuntu1                             amd64        lightweight and flexible command-line JSON processor
 ii  kbd                                1.15.5-1ubuntu1                            amd64        Linux console font and keytable utilities
 ii  keyboard-configuration             1.70ubuntu8                                all          system-wide keyboard preferences
@@ -159,9 +159,9 @@ ii  libcolord1:amd64                   1.0.6-1                                  
 ii  libcomerr2:amd64                   1.42.9-3ubuntu1.3                          amd64        common error description library
 ii  libcroco3:amd64                    0.6.8-2ubuntu1                             amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
 ii  libcups2:amd64                     1.7.2-0ubuntu1.9                           amd64        Common UNIX Printing System(tm) - Core library
-ii  libcurl3:amd64                     7.35.0-1ubuntu2.14                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
-ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.14                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
-ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.14                         amd64        development files and documentation for libcurl (OpenSSL flavour)
+ii  libcurl3:amd64                     7.35.0-1ubuntu2.15                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.15                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.15                         amd64        development files and documentation for libcurl (OpenSSL flavour)
 ii  libcwidget3                        0.5.16-3.5ubuntu1                          amd64        high-level terminal interface library for C++ (runtime files)
 ii  libdatrie1:amd64                   0.2.8-1                                    amd64        Double-array trie library
 ii  libdb5.3:amd64                     5.3.28-3ubuntu3.1                          amd64        Berkeley v5.3 Database Libraries [runtime]
@@ -174,7 +174,7 @@ ii  libdjvulibre-dev:amd64             3.5.25.4-3                               
 ii  libdjvulibre-text                  3.5.25.4-3                                 all          Linguistic support files for libdjvulibre
 ii  libdjvulibre21:amd64               3.5.25.4-3                                 amd64        Runtime support for the DjVu image format
 ii  libdns100                          1:9.9.5.dfsg-3ubuntu0.17                   amd64        DNS Shared Library used by BIND
-ii  libdpkg-perl                       1.17.5ubuntu5.7                            all          Dpkg perl modules
+ii  libdpkg-perl                       1.17.5ubuntu5.8                            all          Dpkg perl modules
 ii  libdrm-intel1:amd64                2.4.67-1ubuntu0.14.04.2                    amd64        Userspace interface to intel-specific kernel DRM services -- runtime
 ii  libdrm-nouveau2:amd64              2.4.67-1ubuntu0.14.04.2                    amd64        Userspace interface to nouveau-specific kernel DRM services -- runtime
 ii  libdrm-radeon1:amd64               2.4.67-1ubuntu0.14.04.2                    amd64        Userspace interface to radeon-specific kernel DRM services -- runtime
