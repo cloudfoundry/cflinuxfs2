@@ -37,18 +37,19 @@ Replace the old cflinuxfs2 tarball with the new tarball created above:
 
 ```shell
 rm -f config/blobs.yml
-mkdir -p blobs/rootfs
-cp <path-to-new-tarball>/cflinuxfs2.tar.gz blobs/rootfs/cflinuxfs2-new.tar.gz
+mkdir -p src/rootfs
+cp <path-to-new-tarball>/cflinuxfs2.tar.gz src/rootfs/cflinuxfs2-new.tar.gz
 ```
+(The `-new` in the destination filename is key to match the regex in the spec file for the cflinuxfs2 package.)
 
 Create a dev release and upload it to your BOSH deployment:
 
 ```shell
-bosh create release --force --with-tarball --name cflinuxfs2-rootfs
+bosh create-release --force --tarball=cflinuxfs2-new.zip --name cflinuxfs2
 bosh upload release <generated-dev-release-tar-file>
 ```
 
-If your Diego deployment manifest has `version: latest` indicated for the `cflinuxfs2-rootfs` release, then redeploying your Diego will enable this new rootfs to be used in your app containers.
+If your Diego deployment manifest has `version: latest` indicated for the `cflinuxfs2` release, then redeploying your Diego will enable this new rootfs to be used in your app containers.
 
 # Testing the rootfs
 
@@ -57,7 +58,7 @@ To run the local tests, just run `rspec`. If the top level of this repo contains
 To test the rootfs BOSH release, see the instructions [here](https://github.com/cloudfoundry/cflinuxfs2-release/blob/master/README.md)
 
 # Release pipeline
-
+## TODO: update ci links
 The generation and release of a new rootfs happens on the [cflinuxfs2](https://buildpacks.ci.cf-app.com/pipelines/cflinuxfs2) CI pipeline.
 
 * A new stack is generated with `make`.
