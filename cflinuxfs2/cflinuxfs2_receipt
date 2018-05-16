@@ -1,4 +1,4 @@
-Rootfs SHASUM: 648c5f999dc5a1221f1fb10ba7649c4ae40c3caf
+Rootfs SHASUM: c54918d3783e5acee716a081cfac6af20bfe94a7
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -32,7 +32,7 @@ ii  cpio                               2.11+dfsg-1ubuntu1.2                     
 ii  cpp                                4:4.8.2-1ubuntu6                           amd64        GNU C preprocessor (cpp)
 ii  cpp-4.8                            4.8.4-2ubuntu1~14.04.4                     amd64        GNU C preprocessor
 ii  cron                               3.0pl1-124ubuntu2                          amd64        process scheduling daemon
-ii  curl                               7.35.0-1ubuntu2.15                         amd64        command line tool for transferring data with URL syntax
+ii  curl                               7.35.0-1ubuntu2.16                         amd64        command line tool for transferring data with URL syntax
 ii  dash                               0.5.7-4ubuntu1                             amd64        POSIX-compliant shell
 ii  dconf-gsettings-backend:amd64      0.20.0-1                                   amd64        simple configuration storage system - GSettings back-end
 ii  dconf-service                      0.20.0-1                                   amd64        simple configuration storage system - D-Bus service
@@ -98,7 +98,7 @@ ii  jq                                 1.3-1.1ubuntu1                           
 ii  kbd                                1.15.5-1ubuntu1                            amd64        Linux console font and keytable utilities
 ii  keyboard-configuration             1.70ubuntu8                                all          system-wide keyboard preferences
 ii  klibc-utils                        2.0.3-0ubuntu1.14.04.3                     amd64        small utilities built with klibc for early boot
-ii  kmod                               15-0ubuntu6                                amd64        tools for managing Linux kernel modules
+ii  kmod                               15-0ubuntu7                                amd64        tools for managing Linux kernel modules
 ii  krb5-config                        2.3                                        all          Configuration files for Kerberos Version 5
 ii  krb5-multidev                      1.12+dfsg-2ubuntu5.3                       amd64        Development files for MIT Kerberos without Heimdal conflict
 ii  krb5-user                          1.12+dfsg-2ubuntu5.3                       amd64        Basic programs to authenticate using MIT Kerberos
@@ -159,9 +159,9 @@ ii  libcolord1:amd64                   1.0.6-1                                  
 ii  libcomerr2:amd64                   1.42.9-3ubuntu1.3                          amd64        common error description library
 ii  libcroco3:amd64                    0.6.8-2ubuntu1                             amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
 ii  libcups2:amd64                     1.7.2-0ubuntu1.9                           amd64        Common UNIX Printing System(tm) - Core library
-ii  libcurl3:amd64                     7.35.0-1ubuntu2.15                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
-ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.15                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
-ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.15                         amd64        development files and documentation for libcurl (OpenSSL flavour)
+ii  libcurl3:amd64                     7.35.0-1ubuntu2.16                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.16                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.16                         amd64        development files and documentation for libcurl (OpenSSL flavour)
 ii  libcwidget3                        0.5.16-3.5ubuntu1                          amd64        high-level terminal interface library for C++ (runtime files)
 ii  libdatrie1:amd64                   0.2.8-1                                    amd64        Double-array trie library
 ii  libdb5.3:amd64                     5.3.28-3ubuntu3.1                          amd64        Berkeley v5.3 Database Libraries [runtime]
@@ -279,7 +279,7 @@ ii  libkadm5srv-mit9:amd64             1.12+dfsg-2ubuntu5.3                     
 ii  libkdb5-7:amd64                    1.12+dfsg-2ubuntu5.3                       amd64        MIT Kerberos runtime libraries - Kerberos database
 ii  libkeyutils1:amd64                 1.5.6-1                                    amd64        Linux Key Management Utilities (library)
 ii  libklibc                           2.0.3-0ubuntu1.14.04.3                     amd64        minimal libc subset for use with initramfs
-ii  libkmod2:amd64                     15-0ubuntu6                                amd64        libkmod shared library
+ii  libkmod2:amd64                     15-0ubuntu7                                amd64        libkmod shared library
 ii  libkrb5-26-heimdal:amd64           1.6~git20131207+dfsg-1ubuntu1.2            amd64        Heimdal Kerberos - libraries
 ii  libkrb5-3:amd64                    1.12+dfsg-2ubuntu5.3                       amd64        MIT Kerberos runtime libraries
 ii  libkrb5-dev                        1.12+dfsg-2ubuntu5.3                       amd64        Headers and development libraries for MIT Kerberos
@@ -507,7 +507,7 @@ ii  mawk                               1.3.3-17ubuntu2                          
 ii  mercurial                          2.8.2-1ubuntu1.3                           amd64        easy-to-use, scalable distributed version control system
 ii  mercurial-common                   2.8.2-1ubuntu1.3                           all          easy-to-use, scalable distributed version control system (common files)
 ii  mime-support                       3.54ubuntu1.1                              all          MIME files 'mime.types' & 'mailcap', and support programs
-ii  module-init-tools                  15-0ubuntu6                                all          transitional dummy package (module-init-tools to kmod)
+ii  module-init-tools                  15-0ubuntu7                                all          transitional dummy package (module-init-tools to kmod)
 ii  mount                              2.20.1-5.1ubuntu20.9                       amd64        Tools for mounting and manipulating filesystems
 ii  mountall                           2.53                                       amd64        filesystem mounting tool
 ii  multiarch-support                  2.19-0ubuntu6.14                           amd64        Transitional package to ensure multiarch compatibility
