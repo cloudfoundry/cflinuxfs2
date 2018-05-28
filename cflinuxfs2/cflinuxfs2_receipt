@@ -1,4 +1,4 @@
-Rootfs SHASUM: 47c8d3489783f924987b23f0d33514bbc7975bf0
+Rootfs SHASUM: 01f25a11c3db7c88fe42dbc4b433c22c494e023c
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -81,7 +81,7 @@ ii  gzip                               1.6-3ubuntu1                             
 ii  hicolor-icon-theme                 0.13-1                                     all          default fallback theme for FreeDesktop.org icon themes
 ii  hostname                           3.15ubuntu1                                amd64        utility to set/show the host name or domain name
 ii  icu-devtools                       52.1-3ubuntu0.8                            amd64        Development utilities for International Components for Unicode
-ii  ifupdown                           0.7.47.2ubuntu4.4                          amd64        high level tools to configure network interfaces
+ii  ifupdown                           0.7.47.2ubuntu4.5                          amd64        high level tools to configure network interfaces
 ii  imagemagick                        8:6.7.7.10-6ubuntu3.9                      amd64        image manipulation programs
 ii  imagemagick-common                 8:6.7.7.10-6ubuntu3.9                      all          image manipulation programs -- infrastructure
 ii  init-system-helpers                1.14ubuntu1                                all          helper tools for all init systems
