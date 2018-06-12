@@ -1,4 +1,4 @@
-Rootfs SHASUM: 105402a7cfafea7dfd6082ed7e541226fdc0021e
+Rootfs SHASUM: 4e505a5d9e9e3707745b916815591cbfd17253ee
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -72,9 +72,9 @@ ii  gir1.2-rsvg-2.0                    2.40.2-1                                 
 ii  git                                1:1.9.1-1ubuntu0.8                         amd64        fast, scalable, distributed revision control system
 ii  git-core                           1:1.9.1-1ubuntu0.8                         all          fast, scalable, distributed revision control system (obsolete)
 ii  git-man                            1:1.9.1-1ubuntu0.8                         all          fast, scalable, distributed revision control system (manual pages)
-ii  gnupg                              1.4.16-1ubuntu2.4                          amd64        GNU privacy guard - a free PGP replacement
-ii  gnupg-curl                         1.4.16-1ubuntu2.4                          amd64        GNU privacy guard - a free PGP replacement (cURL)
-ii  gpgv                               1.4.16-1ubuntu2.4                          amd64        GNU privacy guard - signature verification tool
+ii  gnupg                              1.4.16-1ubuntu2.5                          amd64        GNU privacy guard - a free PGP replacement
+ii  gnupg-curl                         1.4.16-1ubuntu2.5                          amd64        GNU privacy guard - a free PGP replacement (cURL)
+ii  gpgv                               1.4.16-1ubuntu2.5                          amd64        GNU privacy guard - signature verification tool
 ii  grep                               2.16-1                                     amd64        GNU grep, egrep and fgrep
 ii  gsfonts                            1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1        all          Fonts for the Ghostscript interpreter(s)
 ii  gzip                               1.6-3ubuntu1                               amd64        GNU compression utilities
