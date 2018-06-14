@@ -1,4 +1,4 @@
-Rootfs SHASUM: ab43eaa4412738303b3e25595710489fd66b1361
+Rootfs SHASUM: 0eb39c3ebeefb496940a082a9e70664f129dc7d9
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -50,7 +50,7 @@ ii  e2fslibs:amd64                     1.42.9-3ubuntu1.3                        
 ii  e2fsprogs                          1.42.9-3ubuntu1.3                          amd64        ext2/ext3/ext4 file system utilities
 ii  eject                              2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1 amd64        ejects CDs and operates CD-Changers under Linux
 ii  fakeroot                           1.20-3ubuntu2                              amd64        tool for simulating superuser privileges
-ii  file                               1:5.14-2ubuntu3.3                          amd64        Determines file type using "magic" numbers
+ii  file                               1:5.14-2ubuntu3.4                          amd64        Determines file type using "magic" numbers
 ii  findutils                          4.4.2-7                                    amd64        utilities for finding files--find, xargs
 ii  flex                               2.5.35-10.1ubuntu2                         amd64        A fast lexical analyzer generator.
 ii  fontconfig                         2.11.0-0ubuntu4.2                          amd64        generic font configuration library - support binaries
@@ -302,7 +302,7 @@ ii  liblwres90                         1:9.9.5.dfsg-3ubuntu0.17                 
 ii  liblzma-dev:amd64                  5.1.1alpha+20120614-2ubuntu2               amd64        XZ-format compression library - development files
 ii  liblzma5:amd64                     5.1.1alpha+20120614-2ubuntu2               amd64        XZ-format compression library
 ii  liblzo2-2:amd64                    2.06-1.2ubuntu1.1                          amd64        data compression library
-ii  libmagic1:amd64                    1:5.14-2ubuntu3.3                          amd64        File type determination library using "magic" numbers
+ii  libmagic1:amd64                    1:5.14-2ubuntu3.4                          amd64        File type determination library using "magic" numbers
 ii  libmagickcore-dev                  8:6.7.7.10-6ubuntu3.11                     amd64        low-level image manipulation library - development files
 ii  libmagickcore5:amd64               8:6.7.7.10-6ubuntu3.11                     amd64        low-level image manipulation library
 ii  libmagickcore5-extra:amd64         8:6.7.7.10-6ubuntu3.11                     amd64        low-level image manipulation library - extra codecs
