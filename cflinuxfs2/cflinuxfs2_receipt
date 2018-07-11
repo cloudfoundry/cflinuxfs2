@@ -1,4 +1,4 @@
-Rootfs SHASUM: 755bdac355ac7103ac5d9e7f94d777d7542802fc
+Rootfs SHASUM: 4c62edc468ffeb4f97fa7396ff7b4e96606746e1
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -357,8 +357,8 @@ ii  libpcrecpp0:amd64                  1:8.31-2ubuntu2.3                        
 ii  libpixman-1-0:amd64                0.30.2-2ubuntu1.1                          amd64        pixel-manipulation library for X and cairo
 ii  libpixman-1-dev                    0.30.2-2ubuntu1.1                          amd64        pixel-manipulation library for X and cairo (development files)
 ii  libplymouth2:amd64                 0.8.8-0ubuntu17.2                          amd64        graphical boot animation and logger - shared libraries
-ii  libpng12-0:amd64                   1.2.50-1ubuntu2.14.04.2                    amd64        PNG library - runtime
-ii  libpng12-dev                       1.2.50-1ubuntu2.14.04.2                    amd64        PNG library - development
+ii  libpng12-0:amd64                   1.2.50-1ubuntu2.14.04.3                    amd64        PNG library - runtime
+ii  libpng12-dev                       1.2.50-1ubuntu2.14.04.3                    amd64        PNG library - development
 ii  libpod-latex-perl                  0.61-1                                     all          module to convert Pod data to formatted LaTeX
 ii  libpopt0:amd64                     1.16-8ubuntu1                              amd64        lib for parsing cmdline parameters
 ii  libpq-dev                          9.3.23-0ubuntu0.14.04                      amd64        header files for libpq5 (PostgreSQL library)
