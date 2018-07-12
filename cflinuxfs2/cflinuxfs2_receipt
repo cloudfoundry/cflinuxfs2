@@ -1,4 +1,4 @@
-Rootfs SHASUM: 4c62edc468ffeb4f97fa7396ff7b4e96606746e1
+Rootfs SHASUM: 4de5a15d16b275f121e369e244614912f1fb5ad9
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -158,7 +158,7 @@ ii  libcloog-isl4:amd64                0.18.2-1                                 
 ii  libcolord1:amd64                   1.0.6-1                                    amd64        system service to manage device colour profiles -- runtime
 ii  libcomerr2:amd64                   1.42.9-3ubuntu1.3                          amd64        common error description library
 ii  libcroco3:amd64                    0.6.8-2ubuntu1                             amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
-ii  libcups2:amd64                     1.7.2-0ubuntu1.9                           amd64        Common UNIX Printing System(tm) - Core library
+ii  libcups2:amd64                     1.7.2-0ubuntu1.10                          amd64        Common UNIX Printing System(tm) - Core library
 ii  libcurl3:amd64                     7.35.0-1ubuntu2.16                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
 ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.16                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
 ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.16                         amd64        development files and documentation for libcurl (OpenSSL flavour)
