@@ -1,4 +1,4 @@
-Rootfs SHASUM: 8453d4b68a7b32b61edc3d599c48c845cc0c8a21
+Rootfs SHASUM: 2e3e2e84d4997a92a4a9480b5f3c9160ff872caa
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -308,8 +308,8 @@ ii  libmagickcore5:amd64               8:6.7.7.10-6ubuntu3.12                   
 ii  libmagickcore5-extra:amd64         8:6.7.7.10-6ubuntu3.12                     amd64        low-level image manipulation library - extra codecs
 ii  libmagickwand-dev                  8:6.7.7.10-6ubuntu3.12                     amd64        image manipulation library - development files
 ii  libmagickwand5:amd64               8:6.7.7.10-6ubuntu3.12                     amd64        image manipulation library
-ii  libmariadbclient-dev               5.5.59-1ubuntu0.14.04.1                    amd64        MariaDB database development files
-ii  libmariadbclient18:amd64           5.5.59-1ubuntu0.14.04.1                    amd64        MariaDB database client library
+ii  libmariadbclient-dev               5.5.61-1ubuntu0.14.04.1                    amd64        MariaDB database development files
+ii  libmariadbclient18:amd64           5.5.61-1ubuntu0.14.04.1                    amd64        MariaDB database client library
 ii  libmodule-pluggable-perl           5.1-1                                      all          module for giving  modules the ability to have plugins
 ii  libmount1:amd64                    2.20.1-5.1ubuntu20.9                       amd64        block device id library
 ii  libmp3lame0:amd64                  3.99.5+repack1-3ubuntu1                    amd64        MP3 encoding library
@@ -447,9 +447,9 @@ ii  libwind0-heimdal:amd64             1.6~git20131207+dfsg-1ubuntu1.2          
 ii  libwmf-dev                         0.2.8.4-10.3ubuntu1.14.04.1                amd64        Windows metafile conversion development
 ii  libwmf0.2-7:amd64                  0.2.8.4-10.3ubuntu1.14.04.1                amd64        Windows metafile conversion library
 ii  libwrap0:amd64                     7.6.q-25                                   amd64        Wietse Venema's TCP wrappers library
-ii  libx11-6:amd64                     2:1.6.2-1ubuntu2                           amd64        X11 client-side library
-ii  libx11-data                        2:1.6.2-1ubuntu2                           all          X11 client-side library
-ii  libx11-dev:amd64                   2:1.6.2-1ubuntu2                           amd64        X11 client-side library (development headers)
+ii  libx11-6:amd64                     2:1.6.2-1ubuntu2.1                         amd64        X11 client-side library
+ii  libx11-data                        2:1.6.2-1ubuntu2.1                         all          X11 client-side library
+ii  libx11-dev:amd64                   2:1.6.2-1ubuntu2.1                         amd64        X11 client-side library (development headers)
 ii  libx264-142:amd64                  2:0.142.2389+git956c8d8-2                  amd64        x264 video coding library
 ii  libxapian22                        1.2.16-2ubuntu1                            amd64        Search engine library
 ii  libxau-dev:amd64                   1:1.0.8-1                                  amd64        X11 authorisation library (development headers)
@@ -502,7 +502,7 @@ ii  make                               3.81-8.2ubuntu3                          
 ii  makedev                            2.3.1-93ubuntu2~ubuntu14.04.1              all          creates device files in /dev
 ii  manpages                           3.54-1ubuntu1                              all          Manual pages about using a GNU/Linux system
 ii  manpages-dev                       3.54-1ubuntu1                              all          Manual pages about using GNU/Linux for development
-ii  mariadb-common                     5.5.59-1ubuntu0.14.04.1                    all          MariaDB common metapackage
+ii  mariadb-common                     5.5.61-1ubuntu0.14.04.1                    all          MariaDB common metapackage
 ii  mawk                               1.3.3-17ubuntu2                            amd64        a pattern scanning and text processing language
 ii  mercurial                          2.8.2-1ubuntu1.3                           amd64        easy-to-use, scalable distributed version control system
 ii  mercurial-common                   2.8.2-1ubuntu1.3                           all          easy-to-use, scalable distributed version control system (common files)
