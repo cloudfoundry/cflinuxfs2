@@ -58,7 +58,6 @@ To run the local tests, just run `rspec`. If the top level of this repo contains
 To test the rootfs BOSH release, see the instructions [here](https://github.com/cloudfoundry/cflinuxfs2-release/blob/master/README.md)
 
 # Release pipeline
-## TODO: update ci links
 The generation and release of a new rootfs happens on the [cflinuxfs2](https://buildpacks.ci.cf-app.com/pipelines/cflinuxfs2) CI pipeline.
 
 * A new stack is generated with `make`.
