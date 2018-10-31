@@ -77,6 +77,7 @@ libpq-dev
 libreadline6-dev
 libsasl2-dev
 libsasl2-modules
+libsasl2-modules-gssapi-mit
 libselinux1-dev
 libsigc++-2.0-0c2a:"$arch"
 libsqlite0-dev
