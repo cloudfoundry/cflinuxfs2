@@ -1,4 +1,4 @@
-Rootfs SHASUM: 5bfe4ae80ba0fbccddc892ab9ac2686ec31a8ab1
+Rootfs SHASUM: dbfe618a5bacc2d3955a808eba52417a84c8c4cd
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -32,7 +32,7 @@ ii  cpio                               2.11+dfsg-1ubuntu1.2                     
 ii  cpp                                4:4.8.2-1ubuntu6                           amd64        GNU C preprocessor (cpp)
 ii  cpp-4.8                            4.8.4-2ubuntu1~14.04.4                     amd64        GNU C preprocessor
 ii  cron                               3.0pl1-124ubuntu2                          amd64        process scheduling daemon
-ii  curl                               7.35.0-1ubuntu2.17                         amd64        command line tool for transferring data with URL syntax
+ii  curl                               7.35.0-1ubuntu2.19                         amd64        command line tool for transferring data with URL syntax
 ii  dash                               0.5.7-4ubuntu1                             amd64        POSIX-compliant shell
 ii  dconf-gsettings-backend:amd64      0.20.0-1                                   amd64        simple configuration storage system - GSettings back-end
 ii  dconf-service                      0.20.0-1                                   amd64        simple configuration storage system - D-Bus service
@@ -159,9 +159,9 @@ ii  libcolord1:amd64                   1.0.6-1                                  
 ii  libcomerr2:amd64                   1.42.9-3ubuntu1.3                          amd64        common error description library
 ii  libcroco3:amd64                    0.6.8-2ubuntu1                             amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
 ii  libcups2:amd64                     1.7.2-0ubuntu1.10                          amd64        Common UNIX Printing System(tm) - Core library
-ii  libcurl3:amd64                     7.35.0-1ubuntu2.17                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
-ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.17                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
-ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.17                         amd64        development files and documentation for libcurl (OpenSSL flavour)
+ii  libcurl3:amd64                     7.35.0-1ubuntu2.19                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.19                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.19                         amd64        development files and documentation for libcurl (OpenSSL flavour)
 ii  libcwidget3                        0.5.16-3.5ubuntu1                          amd64        high-level terminal interface library for C++ (runtime files)
 ii  libdatrie1:amd64                   0.2.8-1                                    amd64        Double-array trie library
 ii  libdb5.3:amd64                     5.3.28-3ubuntu3.1                          amd64        Berkeley v5.3 Database Libraries [runtime]
@@ -564,7 +564,7 @@ ii  tcpdump                            4.9.2-0ubuntu0.14.04.1                   
 ii  traceroute                         1:2.0.20-0ubuntu0.1                        amd64        Traces the route taken by packets over an IPv4/IPv6 network
 ii  tsconf                             1.0-12                                     all          touch screen library common files
 ii  ttf-dejavu-core                    2.34-1ubuntu1                              all          transitional dummy package
-ii  tzdata                             2018f-0ubuntu0.14.04                       all          time zone and daylight-saving time data
+ii  tzdata                             2018g-0ubuntu0.14.04                       all          time zone and daylight-saving time data
 ii  ubuntu-keyring                     2012.05.19                                 all          GnuPG keys of the Ubuntu archive
 ii  ubuntu-minimal                     1.325                                      amd64        Minimal core of Ubuntu
 ii  ucf                                3.0027+nmu1                                all          Update Configuration File(s): preserve user changes to config files
