@@ -1,4 +1,4 @@
-Rootfs SHASUM: b0191d7fb84c3774aae95603dc398e4e6023021f
+Rootfs SHASUM: 862fc39dfe4830259b989ec31763d068cb860d91
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -288,8 +288,8 @@ ii  liblapack-dev                      3.5.0-2ubuntu1                           
 ii  liblapack3                         3.5.0-2ubuntu1                             amd64        Library of linear algebra routines 3 - shared version
 ii  liblcms2-2:amd64                   2.5-0ubuntu4.2                             amd64        Little CMS 2 color management library
 ii  liblcms2-dev:amd64                 2.5-0ubuntu4.2                             amd64        Little CMS 2 color management library development headers
-ii  libldap-2.4-2:amd64                2.4.31-1+nmu2ubuntu8.4                     amd64        OpenLDAP libraries
-ii  libldap2-dev:amd64                 2.4.31-1+nmu2ubuntu8.4                     amd64        OpenLDAP development libraries
+ii  libldap-2.4-2:amd64                2.4.31-1+nmu2ubuntu8.5                     amd64        OpenLDAP libraries
+ii  libldap2-dev:amd64                 2.4.31-1+nmu2ubuntu8.5                     amd64        OpenLDAP development libraries
 ii  liblocale-gettext-perl             1.05-7build3                               amd64        module using libc functions for internationalization in Perl
 ii  liblockfile-bin                    1.09-6ubuntu1                              amd64        support binaries for and cli utilities based on liblockfile
 ii  liblockfile1:amd64                 1.09-6ubuntu1                              amd64        NFS-safe locking library
@@ -504,8 +504,8 @@ ii  manpages                           3.54-1ubuntu1                            
 ii  manpages-dev                       3.54-1ubuntu1                              all          Manual pages about using GNU/Linux for development
 ii  mariadb-common                     5.5.61-1ubuntu0.14.04.1                    all          MariaDB common metapackage
 ii  mawk                               1.3.3-17ubuntu2                            amd64        a pattern scanning and text processing language
-ii  mercurial                          2.8.2-1ubuntu1.3                           amd64        easy-to-use, scalable distributed version control system
-ii  mercurial-common                   2.8.2-1ubuntu1.3                           all          easy-to-use, scalable distributed version control system (common files)
+ii  mercurial                          2.8.2-1ubuntu1.4                           amd64        easy-to-use, scalable distributed version control system
+ii  mercurial-common                   2.8.2-1ubuntu1.4                           all          easy-to-use, scalable distributed version control system (common files)
 ii  mime-support                       3.54ubuntu1.1                              all          MIME files 'mime.types' & 'mailcap', and support programs
 ii  module-init-tools                  15-0ubuntu7                                all          transitional dummy package (module-init-tools to kmod)
 ii  mount                              2.20.1-5.1ubuntu20.9                       amd64        Tools for mounting and manipulating filesystems
