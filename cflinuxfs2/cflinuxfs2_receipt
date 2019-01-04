@@ -1,4 +1,4 @@
-Rootfs SHASUM: 5d8a281c11c6c48d3d14a6b130cd03c659181e05
+Rootfs SHASUM: 6c8629c849fd6680d0f16b97a44100c1a9d21005
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -564,7 +564,7 @@ ii  tcpdump                            4.9.2-0ubuntu0.14.04.1                   
 ii  traceroute                         1:2.0.20-0ubuntu0.1                        amd64        Traces the route taken by packets over an IPv4/IPv6 network
 ii  tsconf                             1.0-12                                     all          touch screen library common files
 ii  ttf-dejavu-core                    2.34-1ubuntu1                              all          transitional dummy package
-ii  tzdata                             2018g-0ubuntu0.14.04                       all          time zone and daylight-saving time data
+ii  tzdata                             2018i-0ubuntu0.14.04                       all          time zone and daylight-saving time data
 ii  ubuntu-advantage-tools             10ubuntu0.14.04.2                          all          management tools for Ubuntu Advantage
 ii  ubuntu-keyring                     2012.05.19                                 all          GnuPG keys of the Ubuntu archive
 ii  ubuntu-minimal                     1.325.1                                    amd64        Minimal core of Ubuntu
