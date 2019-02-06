@@ -1,4 +1,4 @@
-Rootfs SHASUM: b20ac6efab15857bee5eff4e6a724dac32b23b7f
+Rootfs SHASUM: 2315b8e7beca5eee10298d96cba144fad338dffe
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -32,7 +32,7 @@ ii  cpio                               2.11+dfsg-1ubuntu1.2                     
 ii  cpp                                4:4.8.2-1ubuntu6                           amd64        GNU C preprocessor (cpp)
 ii  cpp-4.8                            4.8.4-2ubuntu1~14.04.4                     amd64        GNU C preprocessor
 ii  cron                               3.0pl1-124ubuntu2                          amd64        process scheduling daemon
-ii  curl                               7.35.0-1ubuntu2.19                         amd64        command line tool for transferring data with URL syntax
+ii  curl                               7.35.0-1ubuntu2.20                         amd64        command line tool for transferring data with URL syntax
 ii  dash                               0.5.7-4ubuntu1                             amd64        POSIX-compliant shell
 ii  dconf-gsettings-backend:amd64      0.20.0-1                                   amd64        simple configuration storage system - GSettings back-end
 ii  dconf-service                      0.20.0-1                                   amd64        simple configuration storage system - D-Bus service
@@ -159,9 +159,9 @@ ii  libcolord1:amd64                   1.0.6-1                                  
 ii  libcomerr2:amd64                   1.42.9-3ubuntu1.3                          amd64        common error description library
 ii  libcroco3:amd64                    0.6.8-2ubuntu1                             amd64        Cascading Style Sheet (CSS) parsing and manipulation toolkit
 ii  libcups2:amd64                     1.7.2-0ubuntu1.11                          amd64        Common UNIX Printing System(tm) - Core library
-ii  libcurl3:amd64                     7.35.0-1ubuntu2.19                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
-ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.19                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
-ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.19                         amd64        development files and documentation for libcurl (OpenSSL flavour)
+ii  libcurl3:amd64                     7.35.0-1ubuntu2.20                         amd64        easy-to-use client-side URL transfer library (OpenSSL flavour)
+ii  libcurl3-gnutls:amd64              7.35.0-1ubuntu2.20                         amd64        easy-to-use client-side URL transfer library (GnuTLS flavour)
+ii  libcurl4-openssl-dev:amd64         7.35.0-1ubuntu2.20                         amd64        development files and documentation for libcurl (OpenSSL flavour)
 ii  libcwidget3                        0.5.16-3.5ubuntu1                          amd64        high-level terminal interface library for C++ (runtime files)
 ii  libdatrie1:amd64                   0.2.8-1                                    amd64        Double-array trie library
 ii  libdb5.3:amd64                     5.3.28-3ubuntu3.1                          amd64        Berkeley v5.3 Database Libraries [runtime]
