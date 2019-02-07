@@ -1,4 +1,4 @@
-Rootfs SHASUM: 2315b8e7beca5eee10298d96cba144fad338dffe
+Rootfs SHASUM: 9975c40e1edd21e7803a711aa8219f90cee3b59c
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -111,7 +111,7 @@ ii  libaprutil1:amd64                  1.5.3-1                                  
 ii  libapt-inst1.5:amd64               1.0.1ubuntu2.19                            amd64        deb package format runtime library
 ii  libapt-pkg4.12:amd64               1.0.1ubuntu2.19                            amd64        package management runtime library
 ii  libarchive-extract-perl            0.70-1                                     all          generic archive extracting module
-ii  libarchive13:amd64                 3.1.2-7ubuntu2.7                           amd64        Multi-format archive and compression library (shared library)
+ii  libarchive13:amd64                 3.1.2-7ubuntu2.8                           amd64        Multi-format archive and compression library (shared library)
 ii  libasan0:amd64                     4.8.4-2ubuntu1~14.04.4                     amd64        AddressSanitizer -- a fast memory error detector
 ii  libasn1-8-heimdal:amd64            1.6~git20131207+dfsg-1ubuntu1.2            amd64        Heimdal Kerberos - ASN.1 library
 ii  libatk-bridge2.0-0:amd64           2.10.2-2ubuntu1                            amd64        AT-SPI 2 toolkit bridge - shared library
