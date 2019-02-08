@@ -1,4 +1,4 @@
-Rootfs SHASUM: a7db0ef23aea88cb6bcb7c1372eba4fd88ba3a19
+Rootfs SHASUM: 52be84994ce7fc60330b8bfa6d5c8c9f4919c2cd
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -308,8 +308,8 @@ ii  libmagickcore5:amd64               8:6.7.7.10-6ubuntu3.13                   
 ii  libmagickcore5-extra:amd64         8:6.7.7.10-6ubuntu3.13                     amd64        low-level image manipulation library - extra codecs
 ii  libmagickwand-dev                  8:6.7.7.10-6ubuntu3.13                     amd64        image manipulation library - development files
 ii  libmagickwand5:amd64               8:6.7.7.10-6ubuntu3.13                     amd64        image manipulation library
-ii  libmariadbclient-dev               5.5.61-1ubuntu0.14.04.1                    amd64        MariaDB database development files
-ii  libmariadbclient18:amd64           5.5.61-1ubuntu0.14.04.1                    amd64        MariaDB database client library
+ii  libmariadbclient-dev               5.5.63-1ubuntu0.14.04.1                    amd64        MariaDB database development files
+ii  libmariadbclient18:amd64           5.5.63-1ubuntu0.14.04.1                    amd64        MariaDB database client library
 ii  libmodule-pluggable-perl           5.1-1                                      all          module for giving  modules the ability to have plugins
 ii  libmount1:amd64                    2.20.1-5.1ubuntu20.9                       amd64        block device id library
 ii  libmp3lame0:amd64                  3.99.5+repack1-3ubuntu1                    amd64        MP3 encoding library
@@ -502,7 +502,7 @@ ii  make                               3.81-8.2ubuntu3                          
 ii  makedev                            2.3.1-93ubuntu2~ubuntu14.04.1              all          creates device files in /dev
 ii  manpages                           3.54-1ubuntu1                              all          Manual pages about using a GNU/Linux system
 ii  manpages-dev                       3.54-1ubuntu1                              all          Manual pages about using GNU/Linux for development
-ii  mariadb-common                     5.5.61-1ubuntu0.14.04.1                    all          MariaDB common metapackage
+ii  mariadb-common                     5.5.63-1ubuntu0.14.04.1                    all          MariaDB common metapackage
 ii  mawk                               1.3.3-17ubuntu2                            amd64        a pattern scanning and text processing language
 ii  mercurial                          2.8.2-1ubuntu1.4                           amd64        easy-to-use, scalable distributed version control system
 ii  mercurial-common                   2.8.2-1ubuntu1.4                           all          easy-to-use, scalable distributed version control system (common files)
