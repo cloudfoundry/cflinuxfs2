@@ -1,4 +1,4 @@
-Rootfs SHASUM: 0f99a1b3ced5f62baed1b4003e00de63c2a3a7ba
+Rootfs SHASUM: 73deddd3f6e2196a3df079bf26224bb7f86f7730
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -6,8 +6,8 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ||/ Name                               Version                                    Architecture Description
 +++-==================================-==========================================-============-===============================================================================
 ii  adduser                            3.113+nmu3ubuntu3                          all          add and remove users and groups
-ii  apt                                1.0.1ubuntu2.19                            amd64        commandline package manager
-ii  apt-utils                          1.0.1ubuntu2.19                            amd64        package management related utility programs
+ii  apt                                1.0.1ubuntu2.20                            amd64        commandline package manager
+ii  apt-utils                          1.0.1ubuntu2.20                            amd64        package management related utility programs
 ii  aptitude                           0.6.8.2-1ubuntu4                           amd64        terminal-based package manager
 ii  aptitude-common                    0.6.8.2-1ubuntu4                           all          architecture indepedent files for the aptitude package manager
 ii  autoconf                           2.69-6                                     all          automatic configure script builder
@@ -108,8 +108,8 @@ ii  libacl1:amd64                      2.2.52-1                                 
 ii  libaio1:amd64                      0.3.109-4                                  amd64        Linux kernel AIO access library - shared library
 ii  libapr1:amd64                      1.5.0-1                                    amd64        Apache Portable Runtime Library
 ii  libaprutil1:amd64                  1.5.3-1                                    amd64        Apache Portable Runtime Utility Library
-ii  libapt-inst1.5:amd64               1.0.1ubuntu2.19                            amd64        deb package format runtime library
-ii  libapt-pkg4.12:amd64               1.0.1ubuntu2.19                            amd64        package management runtime library
+ii  libapt-inst1.5:amd64               1.0.1ubuntu2.20                            amd64        deb package format runtime library
+ii  libapt-pkg4.12:amd64               1.0.1ubuntu2.20                            amd64        package management runtime library
 ii  libarchive-extract-perl            0.70-1                                     all          generic archive extracting module
 ii  libarchive13:amd64                 3.1.2-7ubuntu2.8                           amd64        Multi-format archive and compression library (shared library)
 ii  libasan0:amd64                     4.8.4-2ubuntu1~14.04.4                     amd64        AddressSanitizer -- a fast memory error detector
@@ -403,8 +403,8 @@ ii  libspectrum8:amd64                 1.1.1-1                                  
 ii  libspeex1:amd64                    1.2~rc1.1-1ubuntu1                         amd64        The Speex codec runtime library
 ii  libsqlite0                         2.8.17-10ubuntu2                           amd64        SQLite shared library
 ii  libsqlite0-dev                     2.8.17-10ubuntu2                           amd64        SQLite development files
-ii  libsqlite3-0:amd64                 3.8.2-1ubuntu2.1                           amd64        SQLite 3 shared library
-ii  libsqlite3-dev:amd64               3.8.2-1ubuntu2.1                           amd64        SQLite 3 development files
+ii  libsqlite3-0:amd64                 3.8.2-1ubuntu2.2                           amd64        SQLite 3 shared library
+ii  libsqlite3-dev:amd64               3.8.2-1ubuntu2.2                           amd64        SQLite 3 development files
 ii  libss2:amd64                       1.42.9-3ubuntu1.3                          amd64        command-line interface parsing library
 ii  libssl-dev:amd64                   1.0.1f-1ubuntu2.27                         amd64        Secure Sockets Layer toolkit - development files
 ii  libssl1.0.0:amd64                  1.0.1f-1ubuntu2.27                         amd64        Secure Sockets Layer toolkit - shared libraries
