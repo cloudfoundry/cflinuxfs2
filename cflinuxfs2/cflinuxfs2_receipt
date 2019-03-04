@@ -1,4 +1,4 @@
-Rootfs SHASUM: df885862b6a6a731252f91e0ad6feabd95577c7f
+Rootfs SHASUM: 232ec4cfade1d6887c64053bf0be6e2511e46f7b
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -11,7 +11,7 @@ ii  apt-utils                          1.0.1ubuntu2.20                          
 ii  aptitude                           0.6.8.2-1ubuntu4                           amd64        terminal-based package manager
 ii  aptitude-common                    0.6.8.2-1ubuntu4                           all          architecture indepedent files for the aptitude package manager
 ii  autoconf                           2.69-6                                     all          automatic configure script builder
-ii  base-files                         7.2ubuntu5.5                               amd64        Debian base system miscellaneous files
+ii  base-files                         7.2ubuntu5.6                               amd64        Debian base system miscellaneous files
 ii  base-passwd                        3.5.33                                     amd64        Debian base system master password and group files
 ii  bash                               4.3-7ubuntu1.7                             amd64        GNU Bourne Again SHell
 ii  bind9-host                         1:9.9.5.dfsg-3ubuntu0.19                   amd64        Version of 'host' bundled with BIND 9.X
