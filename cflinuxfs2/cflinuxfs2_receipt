@@ -1,4 +1,4 @@
-Rootfs SHASUM: 62b71090a0b47d8b02f473bc33b55138bfa65d70
+Rootfs SHASUM: b2635ef197373f3e83411bb03f2499bb68de74af
 
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -432,7 +432,7 @@ ii  libtinfo-dev:amd64                 5.9+20140118-1ubuntu1                    
 ii  libtinfo5:amd64                    5.9+20140118-1ubuntu1                      amd64        shared low-level terminfo library for terminal handling
 ii  libts-0.0-0:amd64                  1.0-12                                     amd64        touch screen library
 ii  libtsan0:amd64                     4.8.4-2ubuntu1~14.04.4                     amd64        ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
-ii  libudev1:amd64                     204-5ubuntu20.29                           amd64        libudev shared library
+ii  libudev1:amd64                     204-5ubuntu20.31                           amd64        libudev shared library
 ii  libusb-0.1-4:amd64                 2:0.1.12-23.3ubuntu1                       amd64        userspace USB programming library
 ii  libustr-1.0-1:amd64                1.0.4-3ubuntu2                             amd64        Micro string library: shared library
 ii  libuuid1:amd64                     2.20.1-5.1ubuntu20.9                       amd64        Universally Unique ID library
@@ -569,7 +569,7 @@ ii  ubuntu-advantage-tools             10ubuntu0.14.04.2                        
 ii  ubuntu-keyring                     2012.05.19                                 all          GnuPG keys of the Ubuntu archive
 ii  ubuntu-minimal                     1.325.1                                    amd64        Minimal core of Ubuntu
 ii  ucf                                3.0027+nmu1                                all          Update Configuration File(s): preserve user changes to config files
-ii  udev                               204-5ubuntu20.29                           amd64        /dev/ and hotplug management daemon
+ii  udev                               204-5ubuntu20.31                           amd64        /dev/ and hotplug management daemon
 ii  unzip                              6.0-9ubuntu1.5                             amd64        De-archiver for .zip files
 ii  upstart                            1.12.1-0ubuntu4.2                          amd64        event-based init daemon
 ii  ureadahead                         0.100.0-16                                 amd64        Read required files in advance
@@ -577,7 +577,7 @@ ii  util-linux                         2.20.1-5.1ubuntu20.9                     
 ii  uuid-dev                           2.20.1-5.1ubuntu20.9                       amd64        universally unique id library - headers and static libraries
 ii  vim-common                         2:7.4.052-1ubuntu3.1                       amd64        Vi IMproved - Common files
 ii  vim-tiny                           2:7.4.052-1ubuntu3.1                       amd64        Vi IMproved - enhanced vi editor - compact version
-ii  wget                               1.15-1ubuntu1.14.04.4                      amd64        retrieves files from the web
+ii  wget                               1.15-1ubuntu1.14.04.5                      amd64        retrieves files from the web
 ii  whiptail                           0.52.15-2ubuntu5                           amd64        Displays user-friendly dialog boxes from shell scripts
 ii  x11-common                         1:7.7+1ubuntu8.1                           all          X Window System (X.Org) infrastructure
 ii  x11proto-core-dev                  7.0.26-1~ubuntu2                           all          X11 core wire protocol and auxiliary headers
